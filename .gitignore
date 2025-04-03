@@ -5,6 +5,8 @@ dist
 *.tgz
 lib-cov
 .cache
+kirklin-repos.html
+kirklin-repos.json
 
 ######################
 # Node
