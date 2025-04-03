@@ -7,7 +7,7 @@
 [![License][license-src]][license-href]
 [![javascript_code style][code-style-image]][code-style-url]
 
-A tool to export GitHub user's repository information as an HTML file, categorized by programming language.
+A tool to export GitHub user's repository information as HTML and JSON files, categorized by programming language.
 
 [简体中文](./README.zh-CN.md)
 
@@ -15,7 +15,7 @@ A tool to export GitHub user's repository information as an HTML file, categoriz
 
 - Fetch all public repositories of a GitHub user
 - Categorize by programming language
-- Support for exporting as structured JSON data or HTML format
+- Automatically export both JSON and HTML formats
 - Generate beautiful HTML pages displaying repository information
 - Command-line support
 - Can be imported as a library into other projects
@@ -33,20 +33,33 @@ npm install gh-repo-export
 ## Command-line Usage
 
 ```bash
-# Export specified user's repository information as HTML (default output to username-repos.html)
+# Export specified user's repository information (outputs username-repos.json and username-repos.html)
 gh-repo-export username
 
-# Specify export format (html or json)
-gh-repo-export username json
-
-# Specify output file path
-gh-repo-export username html output.html
-gh-repo-export username json output.json
+# Specify custom output file base name (will generate custom.json and custom.html)
+gh-repo-export username custom
 ```
 
 ## Programmatic Usage
 
-### Export as HTML
+### Export Both JSON and HTML
+
+```typescript
+import { exportGithubRepoDataToJson, exportGithubRepos } from "gh-repo-export";
+
+// Export user's repository data to both formats
+async function exportUserData(username) {
+  // First export JSON
+  const jsonPath = `${username}-repos.json`;
+  await exportGithubRepoDataToJson(username, jsonPath);
+
+  // Then export HTML using the JSON data
+  const htmlPath = `${username}-repos.html`;
+  await exportGithubRepos(username, htmlPath, jsonPath);
+}
+```
+
+### Export Only HTML
 
 ```typescript
 import { exportGithubRepos } from "gh-repo-export";
@@ -55,7 +68,7 @@ import { exportGithubRepos } from "gh-repo-export";
 await exportGithubRepos("username", "output.html");
 ```
 
-### Export as JSON
+### Export Only JSON
 
 ```typescript
 import { exportGithubRepoDataToJson } from "gh-repo-export";

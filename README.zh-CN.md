@@ -7,7 +7,7 @@
 [![License][license-src]][license-href]
 [![javascript_code style][code-style-image]][code-style-url]
 
-一个将GitHub用户的仓库信息导出为HTML文件的工具，按编程语言分类展示。
+一个将GitHub用户的仓库信息导出为HTML和JSON文件的工具，按编程语言分类展示。
 
 [English](./README.md)
 
@@ -15,7 +15,7 @@
 
 - 获取GitHub用户的所有公共仓库
 - 按编程语言分类
-- 支持导出为结构化JSON数据或HTML格式
+- 自动同时导出JSON和HTML格式
 - 生成美观的HTML页面展示仓库信息
 - 支持命令行使用
 - 可作为库导入到其他项目
@@ -33,20 +33,33 @@ npm install gh-repo-export
 ## 命令行使用
 
 ```bash
-# 导出指定用户的仓库信息为HTML（默认输出到 username-repos.html）
+# 导出指定用户的仓库信息（将生成 username-repos.json 和 username-repos.html）
 gh-repo-export username
 
-# 指定导出格式（html或json）
-gh-repo-export username json
-
-# 指定输出文件路径
-gh-repo-export username html output.html
-gh-repo-export username json output.json
+# 指定自定义输出文件基础名称（将生成 custom.json 和 custom.html）
+gh-repo-export username custom
 ```
 
 ## 编程使用
 
-### 导出为HTML
+### 同时导出JSON和HTML
+
+```typescript
+import { exportGithubRepoDataToJson, exportGithubRepos } from "gh-repo-export";
+
+// 将用户的仓库数据导出为两种格式
+async function exportUserData(username) {
+  // 首先导出JSON
+  const jsonPath = `${username}-repos.json`;
+  await exportGithubRepoDataToJson(username, jsonPath);
+
+  // 然后使用JSON数据导出HTML
+  const htmlPath = `${username}-repos.html`;
+  await exportGithubRepos(username, htmlPath, jsonPath);
+}
+```
+
+### 仅导出HTML
 
 ```typescript
 import { exportGithubRepos } from "gh-repo-export";
@@ -55,7 +68,7 @@ import { exportGithubRepos } from "gh-repo-export";
 await exportGithubRepos("username", "output.html");
 ```
 
-### 导出为JSON
+### 仅导出JSON
 
 ```typescript
 import { exportGithubRepoDataToJson } from "gh-repo-export";

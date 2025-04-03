@@ -63,7 +63,7 @@ jobs:
         run: pnpm run build
 
       - name: Generate example HTML
-        run: node dist/cli.mjs kirklin html kirklin-repos.html
+        run: node dist/cli.mjs kirklin
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

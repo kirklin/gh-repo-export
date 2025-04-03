@@ -207,6 +207,13 @@ export function generateHtml(data: GithubRepoData): string {
     .description { 
       color: #586069;
     }
+    .data-source {
+      margin-top: 20px;
+      padding-top: 10px;
+      border-top: 1px solid #eaecef;
+      color: #586069;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
@@ -264,7 +271,10 @@ export function generateHtml(data: GithubRepoData): string {
 `;
   }
 
-  html += `</body>
+  html += `  <div class="data-source">
+    <p>数据来源: <a href="https://github.com/kirklin/gh-repo-export" target="_blank">github.com/kirklin/gh-repo-export</a></p>
+  </div>
+</body>
 </html>`;
 
   return html;
@@ -275,13 +285,15 @@ export function generateHtml(data: GithubRepoData): string {
  * @param username GitHub用户名
  * @param outputPath 输出文件路径
  */
-export async function exportGithubRepoDataToJson(username: string, outputPath: string = `${username}-repos.json`): Promise<void> {
+export async function exportGithubRepoDataToJson(username: string, outputPath: string = `${username}-repos.json`): Promise<GithubRepoData> {
   try {
     const data = await getGithubRepoData(username);
     writeFileSync(outputPath, JSON.stringify(data, null, 2));
     logger.log(`成功导出 ${username} 的仓库数据到 ${outputPath}`);
+    return data;
   } catch (error) {
     logger.error(`导出失败: ${error instanceof Error ? error.message : String(error)}`);
+    throw error;
   }
 }
 
@@ -289,10 +301,30 @@ export async function exportGithubRepoDataToJson(username: string, outputPath: s
  * 导出用户的GitHub仓库信息为HTML文件
  * @param username GitHub用户名
  * @param outputPath 输出文件路径
+ * @param jsonPath JSON数据文件路径，如果提供，将直接使用该文件生成HTML
  */
-export async function exportGithubRepos(username: string, outputPath: string = `${username}-repos.html`): Promise<void> {
+export async function exportGithubRepos(username: string, outputPath: string = `${username}-repos.html`, jsonPath?: string): Promise<void> {
   try {
-    const data = await getGithubRepoData(username);
+    let data: GithubRepoData;
+
+    // 如果提供了JSON文件路径，尝试使用该文件
+    if (jsonPath) {
+      try {
+        // 读取JSON文件内容并解析
+        const fs = await import("node:fs");
+        const jsonContent = fs.readFileSync(jsonPath, "utf-8");
+        data = JSON.parse(jsonContent);
+        logger.log(`从 ${jsonPath} 加载数据`);
+      } catch (jsonError) {
+        logger.error(`从JSON加载数据失败，将重新获取: ${jsonError instanceof Error ? jsonError.message : String(jsonError)}`);
+        data = await getGithubRepoData(username);
+      }
+    } else {
+      // 默认情况下，先导出JSON文件，再使用该数据生成HTML
+      const jsonOutputPath = outputPath.replace(/\.html$/, ".json");
+      data = await exportGithubRepoDataToJson(username, jsonOutputPath);
+    }
+
     const html = generateHtml(data);
     writeFileSync(outputPath, html);
     logger.log(`成功导出 ${data.profile.login} 的仓库信息到 ${outputPath}`);
