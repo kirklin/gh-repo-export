@@ -224,3 +224,76 @@ export interface Repository {
   /** 默认分支 / Default branch */
   default_branch: string;
 }
+
+/**
+ * GitHub 用户接口
+ * GitHub User Interface
+ */
+export interface User {
+  /** 用户登录名 / User login name */
+  login: string;
+  /** 用户ID / User ID */
+  id: number;
+  /** 用户节点ID / User node ID */
+  node_id: string;
+  /** 用户头像URL / User avatar URL */
+  avatar_url: string;
+  /** Gravatar ID / Gravatar ID */
+  gravatar_id: string;
+  /** 用户API URL / User API URL */
+  url: string;
+  /** 用户HTML URL / User HTML URL */
+  html_url: string;
+  /** 关注者API URL / Followers API URL */
+  followers_url: string;
+  /** 关注API URL模板 / Following API URL template */
+  following_url: string;
+  /** Gists API URL模板 / Gists API URL template */
+  gists_url: string;
+  /** 星标API URL模板 / Starred API URL template */
+  starred_url: string;
+  /** 订阅API URL / Subscriptions API URL */
+  subscriptions_url: string;
+  /** 组织API URL / Organizations API URL */
+  organizations_url: string;
+  /** 仓库API URL / Repositories API URL */
+  repos_url: string;
+  /** 事件API URL模板 / Events API URL template */
+  events_url: string;
+  /** 接收事件API URL / Received events API URL */
+  received_events_url: string;
+  /** 用户类型 / User type */
+  type: string;
+  /** 用户视图类型 / User view type */
+  user_view_type: string;
+  /** 是否为站点管理员 / Whether the user is a site admin */
+  site_admin: boolean;
+  /** 用户名称 / User name */
+  name: string;
+  /** 公司或组织 / Company or organization */
+  company: string;
+  /** 博客或网站 / Blog or website */
+  blog: string;
+  /** 所在地 / Location */
+  location: string;
+  /** 电子邮箱 / Email */
+  email: string | null;
+  /** 是否可雇佣 / Whether the user is hireable */
+  hireable: boolean;
+  /** 个人简介 / Bio */
+  bio: string;
+  /** Twitter用户名 / Twitter username */
+  twitter_username: string;
+  /** 公开仓库数量 / Public repositories count */
+  public_repos: number;
+  /** 公开Gist数量 / Public gists count */
+  public_gists: number;
+  /** 关注者数量 / Followers count */
+  followers: number;
+  /** 关注数量 / Following count */
+  following: number;
+  /** 创建时间 / Creation time */
+  created_at: string;
+  /** 更新时间 / Update time */
+  updated_at: string;
+}
