@@ -1,7 +1,7 @@
 {
   "name": "gh-repo-export",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "packageManager": "pnpm@10.2.1",
   "description": "A tool to export GitHub repositories of a user as HTML",
   "author": "Kirk Lin <https://github.com/kirklin>",
