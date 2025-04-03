@@ -196,12 +196,29 @@ export function generateHtml(data: GithubRepoData): string {
   <h1>${displayName} GitHub Repositories</h1>
 `;
 
-  // 按字母顺序排序语言
-  const sortedLanguages = Object.keys(languageGroups).sort();
+  // 获取语言列表并排序，确保"Other"始终在最后
+  const languages = Object.keys(languageGroups);
+  const hasOther = languages.includes("Other");
+
+  // 如果存在"Other"类别，从列表中移除
+  const filteredLanguages = hasOther
+    ? languages.filter(lang => lang !== "Other")
+    : languages;
+
+  // 按字母顺序对其他语言排序
+  const sortedLanguages = filteredLanguages.sort();
+
+  // 如果存在"Other"类别，添加到末尾
+  if (hasOther) {
+    sortedLanguages.push("Other");
+  }
 
   for (const language of sortedLanguages) {
     const repos = languageGroups[language];
-    const capitalizedLang = language.charAt(0).toUpperCase() + language.slice(1);
+    // 特殊处理"Other"类别的标题
+    const capitalizedLang = language === "Other"
+      ? "# Other"
+      : language.charAt(0).toUpperCase() + language.slice(1);
 
     html += `  <div class="language-group">
     <div class="language-title">${capitalizedLang}</div>
