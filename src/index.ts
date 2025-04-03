@@ -1,34 +1,15 @@
-import type { Repository as GitHubRepository, User as GitHubUser } from "./types/github";
+import type { Repository, User } from "./types/github";
 import { writeFileSync } from "node:fs";
 import axios from "axios";
-
-interface Repository {
-  name: string;
-  language: string | null;
-  description: string | null;
-  link: string;
-  isFork: boolean;
-}
-
-interface Profile {
-  login: string;
-  name: string | null;
-  public_repos: number;
-}
 
 interface LanguageGroups {
   [key: string]: Repository[];
 }
 
 interface GithubRepoData {
-  profile: Profile;
-  repos: Repository[];
+  user: User;
+  repositories: Repository[];
   languageGroups: LanguageGroups;
-  // 添加完整的GitHub API数据
-  rawData?: {
-    user: GitHubUser;
-    repositories: GitHubRepository[];
-  };
 }
 
 // 简单的日志工具
@@ -47,7 +28,7 @@ const logger = {
  * @param username GitHub用户名
  * @returns 用户信息
  */
-export async function checkUser(username: string): Promise<GitHubUser> {
+export async function getUser(username: string): Promise<User> {
   const url = `https://api.github.com/users/${username}`;
   try {
     const response = await axios.get(url);
@@ -63,7 +44,7 @@ export async function checkUser(username: string): Promise<GitHubUser> {
  * @param page 页码（从1开始）
  * @returns 仓库列表
  */
-export async function getRepos(username: string, page: number): Promise<GitHubRepository[]> {
+export async function getRepos(username: string, page: number): Promise<Repository[]> {
   const url = `https://api.github.com/users/${username}/repos?per_page=100&page=${page}`;
   try {
     const response = await axios.get(url);
@@ -79,9 +60,9 @@ export async function getRepos(username: string, page: number): Promise<GitHubRe
  * @param publicRepos 公共仓库数量
  * @returns 所有仓库列表
  */
-export async function getAllRepos(username: string, publicRepos: number): Promise<GitHubRepository[]> {
+export async function getAllRepos(username: string, publicRepos: number): Promise<Repository[]> {
   const pages = Math.ceil(publicRepos / 100);
-  const allRepos: GitHubRepository[] = [];
+  const allRepos: Repository[] = [];
 
   for (let page = 1; page <= pages; page++) {
     const repos = await getRepos(username, page);
@@ -93,34 +74,6 @@ export async function getAllRepos(username: string, publicRepos: number): Promis
   }
 
   return allRepos;
-}
-
-/**
- * 将原始GitHub仓库数据转换为简化的仓库数据
- * @param rawRepos 原始仓库数据
- * @returns 简化的仓库数据
- */
-export function simplifyRepoData(rawRepos: GitHubRepository[]): Repository[] {
-  return rawRepos.map(item => ({
-    name: item.name,
-    language: item.language,
-    description: item.description,
-    link: `https://github.com/${item.full_name}`,
-    isFork: item.fork,
-  }));
-}
-
-/**
- * 将原始GitHub用户数据转换为简化的用户概要
- * @param rawUser 原始用户数据
- * @returns 简化的用户概要
- */
-export function simplifyUserData(rawUser: GitHubUser): Profile {
-  return {
-    login: rawUser.login,
-    name: rawUser.name,
-    public_repos: rawUser.public_repos,
-  };
 }
 
 /**
@@ -136,7 +89,7 @@ export function groupByLanguages(repos: Repository[]): LanguageGroups {
 
   for (const repo of repos) {
     // 如果是fork的仓库，添加到Forks分类
-    if (repo.isFork) {
+    if (repo.fork) {
       languages.Forks.push(repo);
       continue; // 跳过后续处理
     }
@@ -165,25 +118,19 @@ export function groupByLanguages(repos: Repository[]): LanguageGroups {
  * @returns 结构化的GitHub仓库数据
  */
 export async function getGithubRepoData(username: string): Promise<GithubRepoData> {
-  const rawUser = await checkUser(username);
-  const profile = simplifyUserData(rawUser);
+  const user = await getUser(username);
 
-  if (!profile.public_repos) {
+  if (!user.public_repos) {
     throw new Error("没有找到公共仓库或网络问题!");
   }
 
-  const rawRepos = await getAllRepos(username, profile.public_repos);
-  const repos = simplifyRepoData(rawRepos);
-  const languageGroups = groupByLanguages(repos);
+  const repositories = await getAllRepos(username, user.public_repos);
+  const languageGroups = groupByLanguages(repositories);
 
   return {
-    profile,
-    repos,
+    user,
+    repositories,
     languageGroups,
-    rawData: {
-      user: rawUser,
-      repositories: rawRepos,
-    },
   };
 }
 
@@ -193,8 +140,8 @@ export async function getGithubRepoData(username: string): Promise<GithubRepoDat
  * @returns HTML字符串
  */
 export function generateHtml(data: GithubRepoData): string {
-  const { profile, languageGroups } = data;
-  const displayName = profile.name || profile.login;
+  const { user, languageGroups } = data;
+  const displayName = user.name || user.login;
 
   let html = `<!DOCTYPE html>
 <html lang="en">
@@ -293,7 +240,7 @@ export function generateHtml(data: GithubRepoData): string {
 
     for (const repo of repos) {
       html += `      <li>
-        <a href="${repo.link}" title="${repo.name}">${repo.name}</a>
+        <a href="${repo.html_url}" title="${repo.name}">${repo.name}</a>
         ${repo.description ? `<span class="description">: ${repo.description}</span>` : ""}
       </li>
 `;
@@ -360,7 +307,7 @@ export async function exportGithubRepos(username: string, outputPath: string = `
 
     const html = generateHtml(data);
     writeFileSync(outputPath, html);
-    logger.log(`成功导出 ${data.profile.login} 的仓库信息到 ${outputPath}`);
+    logger.log(`成功导出 ${data.user.login} 的仓库信息到 ${outputPath}`);
   } catch (error) {
     logger.error(`导出失败: ${error instanceof Error ? error.message : String(error)}`);
   }
