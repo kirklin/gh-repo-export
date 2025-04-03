@@ -1,3 +1,4 @@
+import type { Repository as GitHubRepository, User as GitHubUser } from "./types/github";
 import { writeFileSync } from "node:fs";
 import axios from "axios";
 
@@ -23,6 +24,11 @@ interface GithubRepoData {
   profile: Profile;
   repos: Repository[];
   languageGroups: LanguageGroups;
+  // 添加完整的GitHub API数据
+  rawData?: {
+    user: GitHubUser;
+    repositories: GitHubRepository[];
+  };
 }
 
 // 简单的日志工具
@@ -41,7 +47,7 @@ const logger = {
  * @param username GitHub用户名
  * @returns 用户信息
  */
-export async function checkUser(username: string): Promise<Profile> {
+export async function checkUser(username: string): Promise<GitHubUser> {
   const url = `https://api.github.com/users/${username}`;
   try {
     const response = await axios.get(url);
@@ -57,18 +63,11 @@ export async function checkUser(username: string): Promise<Profile> {
  * @param page 页码（从1开始）
  * @returns 仓库列表
  */
-export async function getRepos(username: string, page: number): Promise<Repository[]> {
+export async function getRepos(username: string, page: number): Promise<GitHubRepository[]> {
   const url = `https://api.github.com/users/${username}/repos?per_page=100&page=${page}`;
   try {
     const response = await axios.get(url);
-    const repos: Repository[] = response.data.map((item: any) => ({
-      name: item.name,
-      language: item.language,
-      description: item.description,
-      link: `https://github.com/${item.full_name}`,
-      isFork: item.fork,
-    }));
-    return repos;
+    return response.data;
   } catch (error) {
     throw new Error(`获取仓库列表失败: ${error instanceof Error ? error.message : String(error)}`);
   }
@@ -80,9 +79,9 @@ export async function getRepos(username: string, page: number): Promise<Reposito
  * @param publicRepos 公共仓库数量
  * @returns 所有仓库列表
  */
-export async function getAllRepos(username: string, publicRepos: number): Promise<Repository[]> {
+export async function getAllRepos(username: string, publicRepos: number): Promise<GitHubRepository[]> {
   const pages = Math.ceil(publicRepos / 100);
-  const allRepos: Repository[] = [];
+  const allRepos: GitHubRepository[] = [];
 
   for (let page = 1; page <= pages; page++) {
     const repos = await getRepos(username, page);
@@ -94,6 +93,34 @@ export async function getAllRepos(username: string, publicRepos: number): Promis
   }
 
   return allRepos;
+}
+
+/**
+ * 将原始GitHub仓库数据转换为简化的仓库数据
+ * @param rawRepos 原始仓库数据
+ * @returns 简化的仓库数据
+ */
+export function simplifyRepoData(rawRepos: GitHubRepository[]): Repository[] {
+  return rawRepos.map(item => ({
+    name: item.name,
+    language: item.language,
+    description: item.description,
+    link: `https://github.com/${item.full_name}`,
+    isFork: item.fork,
+  }));
+}
+
+/**
+ * 将原始GitHub用户数据转换为简化的用户概要
+ * @param rawUser 原始用户数据
+ * @returns 简化的用户概要
+ */
+export function simplifyUserData(rawUser: GitHubUser): Profile {
+  return {
+    login: rawUser.login,
+    name: rawUser.name,
+    public_repos: rawUser.public_repos,
+  };
 }
 
 /**
@@ -138,19 +165,25 @@ export function groupByLanguages(repos: Repository[]): LanguageGroups {
  * @returns 结构化的GitHub仓库数据
  */
 export async function getGithubRepoData(username: string): Promise<GithubRepoData> {
-  const profile = await checkUser(username);
+  const rawUser = await checkUser(username);
+  const profile = simplifyUserData(rawUser);
 
   if (!profile.public_repos) {
     throw new Error("没有找到公共仓库或网络问题!");
   }
 
-  const repos = await getAllRepos(username, profile.public_repos);
+  const rawRepos = await getAllRepos(username, profile.public_repos);
+  const repos = simplifyRepoData(rawRepos);
   const languageGroups = groupByLanguages(repos);
 
   return {
     profile,
     repos,
     languageGroups,
+    rawData: {
+      user: rawUser,
+      repositories: rawRepos,
+    },
   };
 }
 
