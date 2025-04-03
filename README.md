@@ -13,6 +13,7 @@
 
 - 获取GitHub用户的所有公共仓库
 - 按编程语言分类
+- 支持导出为结构化JSON数据或HTML格式
 - 生成美观的HTML页面展示仓库信息
 - 支持命令行使用
 - 可作为库导入到其他项目
@@ -30,23 +31,50 @@ npm install gh-repo-export
 ## 命令行使用
 
 ```bash
-# 导出指定用户的仓库信息（默认输出到 username-repos.html）
+# 导出指定用户的仓库信息为HTML（默认输出到 username-repos.html）
 gh-repo-export username
 
+# 指定导出格式（html或json）
+gh-repo-export username json
+
 # 指定输出文件路径
-gh-repo-export username output.html
+gh-repo-export username html output.html
+gh-repo-export username json output.json
 ```
 
 ## 编程使用
 
+### 导出为HTML
+
 ```typescript
 import { exportGithubRepos } from "gh-repo-export";
 
-// 导出用户的仓库信息
+// 导出用户的仓库信息为HTML
 await exportGithubRepos("username", "output.html");
 ```
 
-或者使用更底层的API：
+### 导出为JSON
+
+```typescript
+import { exportGithubRepoDataToJson } from "gh-repo-export";
+
+// 导出用户的仓库信息为JSON
+await exportGithubRepoDataToJson("username", "output.json");
+```
+
+### 获取结构化数据
+
+```typescript
+import { getGithubRepoData } from "gh-repo-export";
+
+// 获取结构化的仓库数据
+const data = await getGithubRepoData("username");
+console.log(data.profile); // 用户信息
+console.log(data.repos); // 所有仓库
+console.log(data.languageGroups); // 按语言分组的仓库
+```
+
+### 使用底层API
 
 ```typescript
 import {
@@ -66,8 +94,11 @@ async function exportUser(username) {
   // 按语言分组
   const groups = groupByLanguages(repos);
 
+  // 获取结构化数据
+  const data = { profile, repos, languageGroups: groups };
+
   // 生成HTML
-  const html = generateHtml(profile, groups);
+  const html = generateHtml(data);
 
   // 现在可以使用生成的HTML
   console.log(html);

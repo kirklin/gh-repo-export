@@ -18,6 +18,12 @@ interface LanguageGroups {
   [key: string]: Repository[];
 }
 
+interface GithubRepoData {
+  profile: Profile;
+  repos: Repository[];
+  languageGroups: LanguageGroups;
+}
+
 // 简单的日志工具
 const logger = {
   log: (message: string): void => {
@@ -110,12 +116,34 @@ export function groupByLanguages(repos: Repository[]): LanguageGroups {
 }
 
 /**
+ * 获取完整的GitHub仓库数据结构
+ * @param username GitHub用户名
+ * @returns 结构化的GitHub仓库数据
+ */
+export async function getGithubRepoData(username: string): Promise<GithubRepoData> {
+  const profile = await checkUser(username);
+
+  if (!profile.public_repos) {
+    throw new Error("没有找到公共仓库或网络问题!");
+  }
+
+  const repos = await getAllRepos(username, profile.public_repos);
+  const languageGroups = groupByLanguages(repos);
+
+  return {
+    profile,
+    repos,
+    languageGroups,
+  };
+}
+
+/**
  * 生成HTML输出
- * @param profile 用户信息
- * @param groups 按语言分组的仓库
+ * @param data 结构化的GitHub仓库数据
  * @returns HTML字符串
  */
-export function generateHtml(profile: Profile, groups: LanguageGroups): string {
+export function generateHtml(data: GithubRepoData): string {
+  const { profile, languageGroups } = data;
   const displayName = profile.name || profile.login;
 
   let html = `<!DOCTYPE html>
@@ -169,10 +197,10 @@ export function generateHtml(profile: Profile, groups: LanguageGroups): string {
 `;
 
   // 按字母顺序排序语言
-  const sortedLanguages = Object.keys(groups).sort();
+  const sortedLanguages = Object.keys(languageGroups).sort();
 
   for (const language of sortedLanguages) {
-    const repos = groups[language];
+    const repos = languageGroups[language];
     const capitalizedLang = language.charAt(0).toUpperCase() + language.slice(1);
 
     html += `  <div class="language-group">
@@ -203,24 +231,31 @@ export function generateHtml(profile: Profile, groups: LanguageGroups): string {
 }
 
 /**
+ * 导出用户的GitHub仓库数据为JSON文件
+ * @param username GitHub用户名
+ * @param outputPath 输出文件路径
+ */
+export async function exportGithubRepoDataToJson(username: string, outputPath: string = `${username}-repos.json`): Promise<void> {
+  try {
+    const data = await getGithubRepoData(username);
+    writeFileSync(outputPath, JSON.stringify(data, null, 2));
+    logger.log(`成功导出 ${username} 的仓库数据到 ${outputPath}`);
+  } catch (error) {
+    logger.error(`导出失败: ${error instanceof Error ? error.message : String(error)}`);
+  }
+}
+
+/**
  * 导出用户的GitHub仓库信息为HTML文件
  * @param username GitHub用户名
  * @param outputPath 输出文件路径
  */
 export async function exportGithubRepos(username: string, outputPath: string = `${username}-repos.html`): Promise<void> {
   try {
-    const profile = await checkUser(username);
-
-    if (!profile.public_repos) {
-      throw new Error("没有找到公共仓库或网络问题!");
-    }
-
-    const allRepos = await getAllRepos(username, profile.public_repos);
-    const groups = groupByLanguages(allRepos);
-    const html = generateHtml(profile, groups);
-
+    const data = await getGithubRepoData(username);
+    const html = generateHtml(data);
     writeFileSync(outputPath, html);
-    logger.log(`成功导出 ${profile.login} 的仓库信息到 ${outputPath}`);
+    logger.log(`成功导出 ${data.profile.login} 的仓库信息到 ${outputPath}`);
   } catch (error) {
     logger.error(`导出失败: ${error instanceof Error ? error.message : String(error)}`);
   }

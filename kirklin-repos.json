@@ -1,0 +1,1969 @@
+{
+  "profile": {
+    "login": "kirklin",
+    "id": 17453452,
+    "node_id": "MDQ6VXNlcjE3NDUzNDUy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17453452?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kirklin",
+    "html_url": "https://github.com/kirklin",
+    "followers_url": "https://api.github.com/users/kirklin/followers",
+    "following_url": "https://api.github.com/users/kirklin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kirklin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kirklin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kirklin/subscriptions",
+    "organizations_url": "https://api.github.com/users/kirklin/orgs",
+    "repos_url": "https://api.github.com/users/kirklin/repos",
+    "events_url": "https://api.github.com/users/kirklin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kirklin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false,
+    "name": "Kirk Lin",
+    "company": "CTO，微信公众号: Kirk Lin",
+    "blog": "kirklin.cn",
+    "location": "Fuzhou, China",
+    "email": null,
+    "hireable": true,
+    "bio": "Just because you can, doesn’t mean you should.",
+    "twitter_username": "lkirkun",
+    "public_repos": 158,
+    "public_gists": 2,
+    "followers": 289,
+    "following": 85,
+    "created_at": "2016-02-24T13:39:29Z",
+    "updated_at": "2025-02-05T17:51:02Z"
+  },
+  "repos": [
+    {
+      "name": ".github",
+      "language": null,
+      "description": "The default community health files for all my repos on GitHub",
+      "link": "https://github.com/kirklin/.github"
+    },
+    {
+      "name": "ADHD",
+      "language": null,
+      "description": "ADHD wiki by kirklin",
+      "link": "https://github.com/kirklin/ADHD"
+    },
+    {
+      "name": "agi-moment",
+      "language": "TypeScript",
+      "description": "Imagine the Infinite Possibilities of AGI",
+      "link": "https://github.com/kirklin/agi-moment"
+    },
+    {
+      "name": "ai-senior-frontend-developer-helper",
+      "language": null,
+      "description": "A GPT-4 AI Prompt，This tool is designed to assist frontend developers in their coding tasks by providing personalized recommendations and guidance based on their preferences.",
+      "link": "https://github.com/kirklin/ai-senior-frontend-developer-helper"
+    },
+    {
+      "name": "ai_writer_langgraph",
+      "language": "Python",
+      "description": "一个基于 LangChain、 LangGraph 和 OpenAI 的项目，展示了如何使用语言模型和工具来生成大纲并根据大纲撰写文章。",
+      "link": "https://github.com/kirklin/ai_writer_langgraph"
+    },
+    {
+      "name": "algorithm-snowflake",
+      "language": "TypeScript",
+      "description": "A TypeScript implementation of the Snowflake algorithm for generating unique distributed IDs.",
+      "link": "https://github.com/kirklin/algorithm-snowflake"
+    },
+    {
+      "name": "alive",
+      "language": null,
+      "description": "ALIVE BOND 是一款优雅、轻便的穿戴式设备，通过AI收集和共享个人数据，促进人与人之间的连接。",
+      "link": "https://github.com/kirklin/alive"
+    },
+    {
+      "name": "antdv-pro",
+      "language": "TypeScript",
+      "description": "An antdv-based middle and background management system",
+      "link": "https://github.com/kirklin/antdv-pro"
+    },
+    {
+      "name": "arco-design-pro-vue",
+      "language": "Vue",
+      "description": "An out-of-the-box solution to quickly build enterprise-level applications based on Arco Design.",
+      "link": "https://github.com/kirklin/arco-design-pro-vue"
+    },
+    {
+      "name": "arco-design-vue",
+      "language": null,
+      "description": "A Vue.js 3 UI Library based on Arco Design",
+      "link": "https://github.com/kirklin/arco-design-vue"
+    },
+    {
+      "name": "ATM-simulation",
+      "language": "Java",
+      "description": "利用JAVA模拟ATM机存取款管理系统设计",
+      "link": "https://github.com/kirklin/ATM-simulation"
+    },
+    {
+      "name": "awesome-unocss",
+      "language": null,
+      "description": "Awesome things related to UnoCSS",
+      "link": "https://github.com/kirklin/awesome-unocss"
+    },
+    {
+      "name": "awesome-vite",
+      "language": "JavaScript",
+      "description": "⚡️ A curated list of awesome things related to Vite.js",
+      "link": "https://github.com/kirklin/awesome-vite"
+    },
+    {
+      "name": "beijing-hangzhou-canal-history-modernity",
+      "language": "Vue",
+      "description": "京杭大运河",
+      "link": "https://github.com/kirklin/beijing-hangzhou-canal-history-modernity"
+    },
+    {
+      "name": "bili-fav-collector",
+      "language": "TypeScript",
+      "description": "b站 UP主收藏夹工具",
+      "link": "https://github.com/kirklin/bili-fav-collector"
+    },
+    {
+      "name": "Bilibili-Go-Backup",
+      "language": null,
+      "description": null,
+      "link": "https://github.com/kirklin/Bilibili-Go-Backup"
+    },
+    {
+      "name": "BlockCV",
+      "language": "TypeScript",
+      "description": "an online resume editor that allows users to easily create and customize professional resumes. ",
+      "link": "https://github.com/kirklin/BlockCV"
+    },
+    {
+      "name": "blog",
+      "language": "HTML",
+      "description": "Kirk Lin 的个人博客",
+      "link": "https://github.com/kirklin/blog"
+    },
+    {
+      "name": "boot-backend-go-clean",
+      "language": "Go",
+      "description": "Golang Clean Architecture REST API",
+      "link": "https://github.com/kirklin/boot-backend-go-clean"
+    },
+    {
+      "name": "boot-flask",
+      "language": "Python",
+      "description": null,
+      "link": "https://github.com/kirklin/boot-flask"
+    },
+    {
+      "name": "boot-flutter",
+      "language": null,
+      "description": null,
+      "link": "https://github.com/kirklin/boot-flutter"
+    },
+    {
+      "name": "boot-lynx",
+      "language": "TypeScript",
+      "description": null,
+      "link": "https://github.com/kirklin/boot-lynx"
+    },
+    {
+      "name": "boot-mcp",
+      "language": "TypeScript",
+      "description": "A starter template for building Model Context Protocol (MCP) applications with TypeScript",
+      "link": "https://github.com/kirklin/boot-mcp"
+    },
+    {
+      "name": "boot-nextjs",
+      "language": "TypeScript",
+      "description": "a Next.js project",
+      "link": "https://github.com/kirklin/boot-nextjs"
+    },
+    {
+      "name": "boot-nuxt3",
+      "language": "TypeScript",
+      "description": null,
+      "link": "https://github.com/kirklin/boot-nuxt3"
+    },
+    {
+      "name": "boot-react",
+      "language": "HTML",
+      "description": "boot-react is a lightning fast React boilerplate with strongly typed TypeScript, UnoCSS, and Netlify support.",
+      "link": "https://github.com/kirklin/boot-react"
+    },
+    {
+      "name": "boot-react-native",
+      "language": "TypeScript",
+      "description": null,
+      "link": "https://github.com/kirklin/boot-react-native"
+    },
+    {
+      "name": "boot-slidev",
+      "language": "Vue",
+      "description": "Fast boot slides",
+      "link": "https://github.com/kirklin/boot-slidev"
+    },
+    {
+      "name": "boot-taro-react",
+      "language": "TypeScript",
+      "description": "基于 Taro + React 的开箱即用的小程序模板，采用最新的 Taro 4.0 + React 18 + TypeScript + UnoCSS 。A ready-to-use mini program template based on Taro + React, featuring the latest Taro 4.0, React 18, TypeScript, and UnoCSS.",
+      "link": "https://github.com/kirklin/boot-taro-react"
+    },
+    {
+      "name": "boot-taro-vue",
+      "language": "TypeScript",
+      "description": "使用 Vue3、Taro 、TypeScript 、Tailwind/Windi CSS等技术开发微信小程序",
+      "link": "https://github.com/kirklin/boot-taro-vue"
+    },
+    {
+      "name": "boot-ts",
+      "language": "TypeScript",
+      "description": "a fast development framework based on TypeScript and rich plugins, which can quickly start projects and provide modular development, automated building, testing, and more.",
+      "link": "https://github.com/kirklin/boot-ts"
+    },
+    {
+      "name": "boot-uni",
+      "language": "TypeScript",
+      "description": "Mocking up uni app with Boot-Uni",
+      "link": "https://github.com/kirklin/boot-uni"
+    },
+    {
+      "name": "boot-unplugin",
+      "language": "TypeScript",
+      "description": "Starter template for unplugin.",
+      "link": "https://github.com/kirklin/boot-unplugin"
+    },
+    {
+      "name": "boot-vant",
+      "language": "TypeScript",
+      "description": null,
+      "link": "https://github.com/kirklin/boot-vant"
+    },
+    {
+      "name": "boot-vue",
+      "language": "Vue",
+      "description": "Boot Vue is a lightning fast Vue 3 template with strongly typed TypeScript, UnoCSS, DaisyUI, Vue Router, Pinia, and Netlify support.",
+      "link": "https://github.com/kirklin/boot-vue"
+    },
+    {
+      "name": "boot-vue-ui-library",
+      "language": "TypeScript",
+      "description": null,
+      "link": "https://github.com/kirklin/boot-vue-ui-library"
+    },
+    {
+      "name": "boot-webext",
+      "language": "TypeScript",
+      "description": "Chrome extension template with Vue 3 + Typescript",
+      "link": "https://github.com/kirklin/boot-webext"
+    },
+    {
+      "name": "brics-skills-iot-screen",
+      "language": "Vue",
+      "description": "2022金砖国家技能发展与技术创新大赛厦门国际赛 物联网及其在智慧城市中的应用",
+      "link": "https://github.com/kirklin/brics-skills-iot-screen"
+    },
+    {
+      "name": "calendar",
+      "language": "Vue",
+      "description": "🍞📅 A Vue calendar Component",
+      "link": "https://github.com/kirklin/calendar"
+    },
+    {
+      "name": "caption2md",
+      "language": "Python",
+      "description": "B站弹幕转markdown",
+      "link": "https://github.com/kirklin/caption2md"
+    },
+    {
+      "name": "celeris",
+      "language": "TypeScript",
+      "description": "Celeris is a full-stack platform for developing and deploying web applications and microservices using Vue and Spring Boot.",
+      "link": "https://github.com/kirklin/celeris"
+    },
+    {
+      "name": "celeris-web",
+      "language": "TypeScript",
+      "description": "Celeris Web is a highly performant and customizable front-end development template built with Vue 3, Vite, and TypeScript. It features the latest syntax, components and APIs auto importing, state management, Chinese font presets, internationalization, and integration with OpenAI's ChatGPT API.",
+      "link": "https://github.com/kirklin/celeris-web"
+    },
+    {
+      "name": "cfuse",
+      "language": "TypeScript",
+      "description": "A utility for constructing className strings conditionally.",
+      "link": "https://github.com/kirklin/cfuse"
+    },
+    {
+      "name": "chatgpt-demo",
+      "language": "TypeScript",
+      "description": null,
+      "link": "https://github.com/kirklin/chatgpt-demo"
+    },
+    {
+      "name": "contribute",
+      "language": null,
+      "description": "Contribution guide for my projects",
+      "link": "https://github.com/kirklin/contribute"
+    },
+    {
+      "name": "cpdaily",
+      "language": "Java",
+      "description": "今日校园请假UI模仿",
+      "link": "https://github.com/kirklin/cpdaily"
+    },
+    {
+      "name": "create-boot",
+      "language": "TypeScript",
+      "description": "Scaffolding Your First Web App Project",
+      "link": "https://github.com/kirklin/create-boot"
+    },
+    {
+      "name": "create-vite-boot",
+      "language": "TypeScript",
+      "description": null,
+      "link": "https://github.com/kirklin/create-vite-boot"
+    },
+    {
+      "name": "create_folders",
+      "language": "Batchfile",
+      "description": null,
+      "link": "https://github.com/kirklin/create_folders"
+    },
+    {
+      "name": "cursor-thinking",
+      "language": null,
+      "description": "Enhanced thinking chain and reasoning capabilities for Cursor AI Assistant | 为 Cursor AI 助手提供增强的思维链和推理能力的规则集",
+      "link": "https://github.com/kirklin/cursor-thinking"
+    },
+    {
+      "name": "cursor_machine_id_fork",
+      "language": "Python",
+      "description": null,
+      "link": "https://github.com/kirklin/cursor_machine_id_fork"
+    },
+    {
+      "name": "dailycheckin",
+      "language": "Python",
+      "description": "可基于【腾讯云函数】/【GitHub Actions】/【Docker】的每日签到脚本（支持多账号使用）签到列表: ｜爱奇艺｜全民K歌｜腾讯视频｜有道云笔记｜网易云音乐｜一加手机社区官方论坛｜百度贴吧｜Bilibili｜V2EX｜咔叽网单｜什么值得买｜AcFun｜天翼云盘｜WPS｜吾爱破解｜芒果TV｜联通营业厅｜Fa米家｜喜马拉雅极速版｜小米运动｜百度搜索资源平台｜每日天气预报｜每日一句｜哔咔漫画｜和彩云｜智友邦｜微博｜",
+      "link": "https://github.com/kirklin/dailycheckin"
+    },
+    {
+      "name": "design-layouts",
+      "language": "TypeScript",
+      "description": "Design Layouts is a website that showcases various layouts built using the Tailwind CSS framework. It's a collection of handcrafted layouts that you can use in your next project.",
+      "link": "https://github.com/kirklin/design-layouts"
+    },
+    {
+      "name": "detect-mobile",
+      "language": "TypeScript",
+      "description": "📱 A delightful module for detecting mobile devices and touch capabilities in your web environment. Tailor your user experience based on device characteristics with ease!",
+      "link": "https://github.com/kirklin/detect-mobile"
+    },
+    {
+      "name": "di-event",
+      "language": "TypeScript",
+      "description": "Event-Driven Dependency Injection Project Demo",
+      "link": "https://github.com/kirklin/di-event"
+    },
+    {
+      "name": "docker-registry-proxy",
+      "language": "Go",
+      "description": "一个高性能的Docker代理服务器",
+      "link": "https://github.com/kirklin/docker-registry-proxy"
+    },
+    {
+      "name": "dotfiles",
+      "language": "Shell",
+      "description": "Kirk Lin's Dotfiles",
+      "link": "https://github.com/kirklin/dotfiles"
+    },
+    {
+      "name": "dream-of-red-mansions-note",
+      "language": null,
+      "description": " dream of red mansions红楼梦笔记",
+      "link": "https://github.com/kirklin/dream-of-red-mansions-note"
+    },
+    {
+      "name": "echarts",
+      "language": "TypeScript",
+      "description": "Apache ECharts is a powerful, interactive charting and data visualization library for browser",
+      "link": "https://github.com/kirklin/echarts"
+    },
+    {
+      "name": "eerie-mancer",
+      "language": "TypeScript",
+      "description": null,
+      "link": "https://github.com/kirklin/eerie-mancer"
+    },
+    {
+      "name": "eslint",
+      "language": null,
+      "description": "Find and fix problems in your JavaScript code.",
+      "link": "https://github.com/kirklin/eslint"
+    },
+    {
+      "name": "eslint-config",
+      "language": "TypeScript",
+      "description": "Kirk Lin's ESLint config presets",
+      "link": "https://github.com/kirklin/eslint-config"
+    },
+    {
+      "name": "eslint-config-antfu",
+      "language": "TypeScript",
+      "description": "Anthony's ESLint config presets",
+      "link": "https://github.com/kirklin/eslint-config-antfu"
+    },
+    {
+      "name": "eslint-plugin-kirklin",
+      "language": "TypeScript",
+      "description": "Kirk Lin extended ESLint rules",
+      "link": "https://github.com/kirklin/eslint-plugin-kirklin"
+    },
+    {
+      "name": "eternal-game",
+      "language": "TypeScript",
+      "description": "一个结合大模型技术的智能游戏开发平台",
+      "link": "https://github.com/kirklin/eternal-game"
+    },
+    {
+      "name": "exam-scorer",
+      "language": "Python",
+      "description": "基于智谱AI GLM-4V-Plus多模态大模型的智能判题工具",
+      "link": "https://github.com/kirklin/exam-scorer"
+    },
+    {
+      "name": "forest3-eth-beijing-2024",
+      "language": "TypeScript",
+      "description": null,
+      "link": "https://github.com/kirklin/forest3-eth-beijing-2024"
+    },
+    {
+      "name": "fork_awesome-tailwindcss",
+      "language": null,
+      "description": "😎 Awesome things related to Tailwind CSS",
+      "link": "https://github.com/kirklin/fork_awesome-tailwindcss"
+    },
+    {
+      "name": "fork_clreq",
+      "language": "HTML",
+      "description": "Requirements for Chinese Text Layout",
+      "link": "https://github.com/kirklin/fork_clreq"
+    },
+    {
+      "name": "fork_HelloWord-Keyboard",
+      "language": "C",
+      "description": "瀚文是一把 多功能、模块化 的 机械键盘。",
+      "link": "https://github.com/kirklin/fork_HelloWord-Keyboard"
+    },
+    {
+      "name": "fork_heti",
+      "language": null,
+      "description": "赫蹏（hètí）是专为中文内容展示设计的排版样式增强。它基于通行的中文排版规范而来，可以为网站的读者带来更好的文章阅读体验。",
+      "link": "https://github.com/kirklin/fork_heti"
+    },
+    {
+      "name": "fork_kornia-rs",
+      "language": "Rust",
+      "description": "Low-level Computer Vision library in Rust",
+      "link": "https://github.com/kirklin/fork_kornia-rs"
+    },
+    {
+      "name": "fork_lynx",
+      "language": null,
+      "description": "Empower the Web community and invite more to build across platforms.",
+      "link": "https://github.com/kirklin/fork_lynx"
+    },
+    {
+      "name": "fork_mem0",
+      "language": "Python",
+      "description": "The memory layer for Personalized AI",
+      "link": "https://github.com/kirklin/fork_mem0"
+    },
+    {
+      "name": "fork_naive-ui",
+      "language": "TypeScript",
+      "description": "A Vue 3 Component Library. Fairly Complete. Theme Customizable. Uses TypeScript. Fast.",
+      "link": "https://github.com/kirklin/fork_naive-ui"
+    },
+    {
+      "name": "fork_pnpm",
+      "language": "TypeScript",
+      "description": "Fast, disk space efficient package manager",
+      "link": "https://github.com/kirklin/fork_pnpm"
+    },
+    {
+      "name": "fork_rolldown",
+      "language": "Rust",
+      "description": "Fast Rust bundler for JavaScript with Rollup-compatible API.",
+      "link": "https://github.com/kirklin/fork_rolldown"
+    },
+    {
+      "name": "fork_shadcn-landing-page",
+      "language": "TypeScript",
+      "description": "Landing page template using Shadcn, React, Typescript and Tailwind",
+      "link": "https://github.com/kirklin/fork_shadcn-landing-page"
+    },
+    {
+      "name": "fork_table",
+      "language": "TypeScript",
+      "description": "🤖 Headless UI for building powerful tables & datagrids for TS/JS -  React-Table, Vue-Table, Solid-Table, Svelte-Table",
+      "link": "https://github.com/kirklin/fork_table"
+    },
+    {
+      "name": "fork_unplugin-imagemin",
+      "language": "TypeScript",
+      "description": "📦📦   unplugin  compression  Image Compression plugin based on squoosh and sharp",
+      "link": "https://github.com/kirklin/fork_unplugin-imagemin"
+    },
+    {
+      "name": "fork_vben3",
+      "language": "TypeScript",
+      "description": null,
+      "link": "https://github.com/kirklin/fork_vben3"
+    },
+    {
+      "name": "fork_WTF-JavaScript",
+      "language": "JavaScript",
+      "description": null,
+      "link": "https://github.com/kirklin/fork_WTF-JavaScript"
+    },
+    {
+      "name": "gh-repo-export",
+      "language": null,
+      "description": null,
+      "link": "https://github.com/kirklin/gh-repo-export"
+    },
+    {
+      "name": "go-swd",
+      "language": "Go",
+      "description": "Sensitive Words Detection 一个高性能的敏感词检测和过滤库，基于 Go 语言开发，采用整洁架构设计。专注于中文文本的敏感词检测，支持多种检测策略和灵活的扩展机制。",
+      "link": "https://github.com/kirklin/go-swd"
+    },
+    {
+      "name": "gradio-theme-kirklin",
+      "language": "Python",
+      "description": null,
+      "link": "https://github.com/kirklin/gradio-theme-kirklin"
+    },
+    {
+      "name": "headless-highlighter",
+      "language": "TypeScript",
+      "description": "provide powerful text highlighting functionality",
+      "link": "https://github.com/kirklin/headless-highlighter"
+    },
+    {
+      "name": "hyper-unlock",
+      "language": "Python",
+      "description": "bootloader unlock tool for Xiaomi HyperOS ",
+      "link": "https://github.com/kirklin/hyper-unlock"
+    },
+    {
+      "name": "JavaDesignPattern",
+      "language": "Java",
+      "description": "设计模式（Java）",
+      "link": "https://github.com/kirklin/JavaDesignPattern"
+    },
+    {
+      "name": "jd_sign_bot",
+      "language": "JavaScript",
+      "description": "京东签到机器人",
+      "link": "https://github.com/kirklin/jd_sign_bot"
+    },
+    {
+      "name": "jhipster-lite",
+      "language": "Java",
+      "description": "JHipster Lite ⚡ is a development platform to generate, develop & deploy modern web applications & microservices architecture, step by step.",
+      "link": "https://github.com/kirklin/jhipster-lite"
+    },
+    {
+      "name": "kelly-criterion",
+      "language": "TypeScript",
+      "description": "A Kelly Criterion calculator written in TypeScript",
+      "link": "https://github.com/kirklin/kelly-criterion"
+    },
+    {
+      "name": "kirklin",
+      "language": null,
+      "description": "Kirk Lin 's public profile.",
+      "link": "https://github.com/kirklin/kirklin"
+    },
+    {
+      "name": "kkmall",
+      "language": "JavaScript",
+      "description": "kkmall（KK商城） 项目是一套电商项目，包括前台商城系统以及后台管理系统，基于 SpringCloud + SpringCloudAlibaba + MyBatis-Plus实现，采用 Docker 容器化部署。前台商城系统包括：用户登录、注册、商品搜索、商品详情、购物车、下订单流程、秒杀活动等模块。后台管理系统包括：系统管理、商品系统、优惠营销、库存系统、订单系统、用户系统、内容管理等七大模块。",
+      "link": "https://github.com/kirklin/kkmall"
+    },
+    {
+      "name": "kkplay",
+      "language": "TypeScript",
+      "description": "KKPLAY 是一个 JavaScript 库，帮助你快速且有趣地制作游戏。",
+      "link": "https://github.com/kirklin/kkplay"
+    },
+    {
+      "name": "logger",
+      "language": "TypeScript",
+      "description": "A simple JavaScript logging library that allows you to log messages with levels (Trace, Debug, Info, Warn, and Error)",
+      "link": "https://github.com/kirklin/logger"
+    },
+    {
+      "name": "lynx-examples_fork",
+      "language": "TypeScript",
+      "description": "🚀 Comprehensive Lynx Examples",
+      "link": "https://github.com/kirklin/lynx-examples_fork"
+    },
+    {
+      "name": "magisk-brick-guardian",
+      "language": "Shell",
+      "description": "一个Magisk 模块，用于防止您的设备因 Magisk 模块导致的启动问题而变砖。",
+      "link": "https://github.com/kirklin/magisk-brick-guardian"
+    },
+    {
+      "name": "mi-press-any-key-to-shutdown",
+      "language": "Batchfile",
+      "description": "修复小米手机连接电脑时 \"press any key to shutdown\" 错误的解决方案",
+      "link": "https://github.com/kirklin/mi-press-any-key-to-shutdown"
+    },
+    {
+      "name": "micro-vue",
+      "language": "TypeScript",
+      "description": "Your compact Vue 3 companion for simplified learning and development.",
+      "link": "https://github.com/kirklin/micro-vue"
+    },
+    {
+      "name": "mitt",
+      "language": null,
+      "description": "🥊 Tiny 200 byte functional event emitter / pubsub.",
+      "link": "https://github.com/kirklin/mitt"
+    },
+    {
+      "name": "mojo",
+      "language": "Jupyter Notebook",
+      "description": "The Mojo Programming Language",
+      "link": "https://github.com/kirklin/mojo"
+    },
+    {
+      "name": "mourning-page",
+      "language": "TypeScript",
+      "description": "哀悼日网页变灰",
+      "link": "https://github.com/kirklin/mourning-page"
+    },
+    {
+      "name": "music-skyway",
+      "language": "TypeScript",
+      "description": null,
+      "link": "https://github.com/kirklin/music-skyway"
+    },
+    {
+      "name": "nacos",
+      "language": "Java",
+      "description": "an easy-to-use dynamic service discovery, configuration and service management platform for building cloud native applications.",
+      "link": "https://github.com/kirklin/nacos"
+    },
+    {
+      "name": "NeoMemory",
+      "language": "Vue",
+      "description": "flashcards app on Vue. ",
+      "link": "https://github.com/kirklin/NeoMemory"
+    },
+    {
+      "name": "ni",
+      "language": "TypeScript",
+      "description": "💡 Use the right package manager",
+      "link": "https://github.com/kirklin/ni"
+    },
+    {
+      "name": "npm-name-explorer",
+      "language": "TypeScript",
+      "description": "allows you to check whether a package or organization name is available on npm.",
+      "link": "https://github.com/kirklin/npm-name-explorer"
+    },
+    {
+      "name": "Omi",
+      "language": null,
+      "description": "AI wearables",
+      "link": "https://github.com/kirklin/Omi"
+    },
+    {
+      "name": "OneDay",
+      "language": "Java",
+      "description": "Open source diary application for Android.",
+      "link": "https://github.com/kirklin/OneDay"
+    },
+    {
+      "name": "oops-plugin-framework_fork",
+      "language": "TypeScript",
+      "description": "oops-framework-plugin 是基于 Cocos Creator 3.x 以插件形式使用的游戏框架，此版本框架代码与游戏具体业务逻辑代码分离，方便在项目开发过程随时更新框架最新版本代码。",
+      "link": "https://github.com/kirklin/oops-plugin-framework_fork"
+    },
+    {
+      "name": "palette",
+      "language": "TypeScript",
+      "description": "color palettes",
+      "link": "https://github.com/kirklin/palette"
+    },
+    {
+      "name": "palworld-server-deploy-script",
+      "language": "Shell",
+      "description": "a convenient one-click deployment script designed to facilitate the setup of a Palworld server",
+      "link": "https://github.com/kirklin/palworld-server-deploy-script"
+    },
+    {
+      "name": "pinia",
+      "language": null,
+      "description": "🍍 Intuitive, type safe, light and flexible Store for Vue using the composition api with DevTools support",
+      "link": "https://github.com/kirklin/pinia"
+    },
+    {
+      "name": "portfolio",
+      "language": "TypeScript",
+      "description": "Kirk Lin's Portfolio",
+      "link": "https://github.com/kirklin/portfolio"
+    },
+    {
+      "name": "postcss-px-conversion",
+      "language": "TypeScript",
+      "description": "A plugin for PostCSS that generates viewport units (vw, vh, vmin, vmax) from pixel units. The best choice to create a scalable interface on different displays by one design size.",
+      "link": "https://github.com/kirklin/postcss-px-conversion"
+    },
+    {
+      "name": "prettier-config",
+      "language": "JavaScript",
+      "description": "Prettier Config ( 格式化配置 )",
+      "link": "https://github.com/kirklin/prettier-config"
+    },
+    {
+      "name": "PrivateNotes",
+      "language": "HTML",
+      "description": "个人学习笔记，包含了计算机科学笔记，前端笔记，后端笔记",
+      "link": "https://github.com/kirklin/PrivateNotes"
+    },
+    {
+      "name": "Prompt-Engineering-Guide",
+      "language": "MDX",
+      "description": "🐙 Guides, papers, lecture, notebooks and resources for prompt engineering",
+      "link": "https://github.com/kirklin/Prompt-Engineering-Guide"
+    },
+    {
+      "name": "prompt-prospective-business-owner",
+      "language": null,
+      "description": null,
+      "link": "https://github.com/kirklin/prompt-prospective-business-owner"
+    },
+    {
+      "name": "promptitude",
+      "language": "TypeScript",
+      "description": "Promptitude is a formatted JSON prompt library containing various themes and scenarios. It helps you train ChatGPT more efficiently and effectively to improve the performance of ChatGPT.",
+      "link": "https://github.com/kirklin/promptitude"
+    },
+    {
+      "name": "qzone-history",
+      "language": "Go",
+      "description": "QZone History 是一个旨在还原和重建 QQ 空间历史的项目。通过收集和分析用户的活动记录，即使某些说说、留言板消息等内容已被删除，本项目也能够进行推理并进行数据重建，帮助用户找回珍贵的历史回忆。",
+      "link": "https://github.com/kirklin/qzone-history"
+    },
+    {
+      "name": "reset-css",
+      "language": "CSS",
+      "description": "Collection of standard reset CSS stylesheets.",
+      "link": "https://github.com/kirklin/reset-css"
+    },
+    {
+      "name": "RO-SCIRAW",
+      "language": "Python",
+      "description": "RO-SCIRAW框架是由Kirk Lin开创的提示词方法论，为构建高度精确和高效的提示词提供了一个全新的范式。",
+      "link": "https://github.com/kirklin/RO-SCIRAW"
+    },
+    {
+      "name": "roadmap-render",
+      "language": "TypeScript",
+      "description": "Convert wireframe controls into SVG elements with versatile rendering capabilities for various control types, enabling easy visualization and customization.",
+      "link": "https://github.com/kirklin/roadmap-render"
+    },
+    {
+      "name": "router",
+      "language": "TypeScript",
+      "description": "🚦 The official router for Vue.js",
+      "link": "https://github.com/kirklin/router"
+    },
+    {
+      "name": "rust-course",
+      "language": "Rust",
+      "description": "“连续六年成为全世界最受喜爱的语言，无 GC 也无需手动内存管理、极高的性能和安全性、过程/OO/函数式编程、优秀的包管理、JS 未来基石\" — 工作之余的第二语言来试试 Rust 吧。<<Rust语言圣经>>拥有全面且深入的讲解、生动贴切的示例、德芙般丝滑的内容，甚至还有JS程序员关注的 WASM 和 Deno 等专题。这可能是目前最用心的 Rust 中文学习教程 / Book ",
+      "link": "https://github.com/kirklin/rust-course"
+    },
+    {
+      "name": "scoop-automated-installer",
+      "language": "PowerShell",
+      "description": "Automate the installation and setup of Scoop and common software with this PowerShell script.",
+      "link": "https://github.com/kirklin/scoop-automated-installer"
+    },
+    {
+      "name": "Sentinel",
+      "language": "Java",
+      "description": "A powerful flow control component enabling reliability, resilience and monitoring for microservices. (面向云原生微服务的高可用流控防护组件)",
+      "link": "https://github.com/kirklin/Sentinel"
+    },
+    {
+      "name": "shadcn-landing-page-template",
+      "language": "TypeScript",
+      "description": "Create stunning React landing pages effortlessly with ShadcnUI template",
+      "link": "https://github.com/kirklin/shadcn-landing-page-template"
+    },
+    {
+      "name": "sliding-captcha",
+      "language": "TypeScript",
+      "description": "sliding-captcha",
+      "link": "https://github.com/kirklin/sliding-captcha"
+    },
+    {
+      "name": "spring-gradle-build-action",
+      "language": "Shell",
+      "description": "Reusable GitHub Action for performing a gradle build or running a gradle task.",
+      "link": "https://github.com/kirklin/spring-gradle-build-action"
+    },
+    {
+      "name": "spring-security",
+      "language": "Java",
+      "description": "Spring Security",
+      "link": "https://github.com/kirklin/spring-security"
+    },
+    {
+      "name": "spring-session",
+      "language": "Java",
+      "description": "Spring Session",
+      "link": "https://github.com/kirklin/spring-session"
+    },
+    {
+      "name": "SuperMemo2",
+      "language": "TypeScript",
+      "description": "A TypeScript implementation of the SuperMemo 2 (SM2) algorithm for spaced based repetition algorithm.",
+      "link": "https://github.com/kirklin/SuperMemo2"
+    },
+    {
+      "name": "TanStack-table-demo",
+      "language": "Vue",
+      "description": null,
+      "link": "https://github.com/kirklin/TanStack-table-demo"
+    },
+    {
+      "name": "TanStack-table-doc-cn",
+      "language": "CSS",
+      "description": "TanStack-table-doc-cn is a community-driven effort to provide Chinese language (中文) support for the documentation of the TanStack/table library. ",
+      "link": "https://github.com/kirklin/TanStack-table-doc-cn"
+    },
+    {
+      "name": "third-gpt",
+      "language": "TypeScript",
+      "description": null,
+      "link": "https://github.com/kirklin/third-gpt"
+    },
+    {
+      "name": "TypeChat",
+      "language": "TypeScript",
+      "description": "TypeChat is a library that makes it easy to build natural language interfaces using types.",
+      "link": "https://github.com/kirklin/TypeChat"
+    },
+    {
+      "name": "typescript-go",
+      "language": null,
+      "description": "Staging repo for development of native port of TypeScript",
+      "link": "https://github.com/kirklin/typescript-go"
+    },
+    {
+      "name": "unocss",
+      "language": "TypeScript",
+      "description": "The instant on-demand atomic CSS engine.",
+      "link": "https://github.com/kirklin/unocss"
+    },
+    {
+      "name": "unocss-preset-chinese",
+      "language": "TypeScript",
+      "description": "汉字排版解决方案",
+      "link": "https://github.com/kirklin/unocss-preset-chinese"
+    },
+    {
+      "name": "unocss-preset-ease",
+      "language": "HTML",
+      "description": "UnoCSS preset: easing functions to transitions for effortless animation timing in styles.",
+      "link": "https://github.com/kirklin/unocss-preset-ease"
+    },
+    {
+      "name": "unocss-preset-shadcn",
+      "language": null,
+      "description": "Use shadcn ui with UnoCSS",
+      "link": "https://github.com/kirklin/unocss-preset-shadcn"
+    },
+    {
+      "name": "unplugin",
+      "language": "TypeScript",
+      "description": "Unified plugin system for Vite, Rollup, Webpack, and more",
+      "link": "https://github.com/kirklin/unplugin"
+    },
+    {
+      "name": "unplugin-config",
+      "language": "TypeScript",
+      "description": "🔧 Configuration file generator for web apps, allowing external customization of global variables without repackaging.",
+      "link": "https://github.com/kirklin/unplugin-config"
+    },
+    {
+      "name": "unplugin-mocker",
+      "language": "TypeScript",
+      "description": null,
+      "link": "https://github.com/kirklin/unplugin-mocker"
+    },
+    {
+      "name": "unplugin-theme",
+      "language": "TypeScript",
+      "description": "Dynamically changing the theme color,",
+      "link": "https://github.com/kirklin/unplugin-theme"
+    },
+    {
+      "name": "v-fuse",
+      "language": "TypeScript",
+      "description": null,
+      "link": "https://github.com/kirklin/v-fuse"
+    },
+    {
+      "name": "vite-plugin-vben-theme",
+      "language": "TypeScript",
+      "description": "Vite plugin for dynamically changing the theme color of the interface",
+      "link": "https://github.com/kirklin/vite-plugin-vben-theme"
+    },
+    {
+      "name": "vitepress-ancient",
+      "language": null,
+      "description": "一个专为古诗词文档优化的基于vitepress的工具。",
+      "link": "https://github.com/kirklin/vitepress-ancient"
+    },
+    {
+      "name": "vitesse-webext",
+      "language": "TypeScript",
+      "description": "⚡️ WebExtension Vite Starter Template",
+      "link": "https://github.com/kirklin/vitesse-webext"
+    },
+    {
+      "name": "vscode-settings",
+      "language": null,
+      "description": "Kirk Lin's VS Code settings and extensions",
+      "link": "https://github.com/kirklin/vscode-settings"
+    },
+    {
+      "name": "vue",
+      "language": "TypeScript",
+      "description": "🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+      "link": "https://github.com/kirklin/vue"
+    },
+    {
+      "name": "vue-core",
+      "language": "TypeScript",
+      "description": "🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+      "link": "https://github.com/kirklin/vue-core"
+    },
+    {
+      "name": "vue-vben-admin",
+      "language": "Vue",
+      "description": "A modern vue admin. It is based on Vue3, vite and TypeScript. It's fast！",
+      "link": "https://github.com/kirklin/vue-vben-admin"
+    },
+    {
+      "name": "vue3-hoc-demo",
+      "language": "CSS",
+      "description": null,
+      "link": "https://github.com/kirklin/vue3-hoc-demo"
+    },
+    {
+      "name": "WeChatRead-AIOutline-Crawler",
+      "language": "Python",
+      "description": null,
+      "link": "https://github.com/kirklin/WeChatRead-AIOutline-Crawler"
+    },
+    {
+      "name": "xlayout",
+      "language": "TypeScript",
+      "description": "🤖 Powerful and type-safe form state management for the web. TS/JS, React Layout, Solid Layout, Svelte Layout and Vue Layout.",
+      "link": "https://github.com/kirklin/xlayout"
+    }
+  ],
+  "languageGroups": {
+    "Other": [
+      {
+        "name": ".github",
+        "language": null,
+        "description": "The default community health files for all my repos on GitHub",
+        "link": "https://github.com/kirklin/.github"
+      },
+      {
+        "name": "ADHD",
+        "language": null,
+        "description": "ADHD wiki by kirklin",
+        "link": "https://github.com/kirklin/ADHD"
+      },
+      {
+        "name": "ai-senior-frontend-developer-helper",
+        "language": null,
+        "description": "A GPT-4 AI Prompt，This tool is designed to assist frontend developers in their coding tasks by providing personalized recommendations and guidance based on their preferences.",
+        "link": "https://github.com/kirklin/ai-senior-frontend-developer-helper"
+      },
+      {
+        "name": "alive",
+        "language": null,
+        "description": "ALIVE BOND 是一款优雅、轻便的穿戴式设备，通过AI收集和共享个人数据，促进人与人之间的连接。",
+        "link": "https://github.com/kirklin/alive"
+      },
+      {
+        "name": "arco-design-vue",
+        "language": null,
+        "description": "A Vue.js 3 UI Library based on Arco Design",
+        "link": "https://github.com/kirklin/arco-design-vue"
+      },
+      {
+        "name": "awesome-unocss",
+        "language": null,
+        "description": "Awesome things related to UnoCSS",
+        "link": "https://github.com/kirklin/awesome-unocss"
+      },
+      {
+        "name": "Bilibili-Go-Backup",
+        "language": null,
+        "description": null,
+        "link": "https://github.com/kirklin/Bilibili-Go-Backup"
+      },
+      {
+        "name": "boot-flutter",
+        "language": null,
+        "description": null,
+        "link": "https://github.com/kirklin/boot-flutter"
+      },
+      {
+        "name": "contribute",
+        "language": null,
+        "description": "Contribution guide for my projects",
+        "link": "https://github.com/kirklin/contribute"
+      },
+      {
+        "name": "cursor-thinking",
+        "language": null,
+        "description": "Enhanced thinking chain and reasoning capabilities for Cursor AI Assistant | 为 Cursor AI 助手提供增强的思维链和推理能力的规则集",
+        "link": "https://github.com/kirklin/cursor-thinking"
+      },
+      {
+        "name": "dream-of-red-mansions-note",
+        "language": null,
+        "description": " dream of red mansions红楼梦笔记",
+        "link": "https://github.com/kirklin/dream-of-red-mansions-note"
+      },
+      {
+        "name": "eslint",
+        "language": null,
+        "description": "Find and fix problems in your JavaScript code.",
+        "link": "https://github.com/kirklin/eslint"
+      },
+      {
+        "name": "fork_awesome-tailwindcss",
+        "language": null,
+        "description": "😎 Awesome things related to Tailwind CSS",
+        "link": "https://github.com/kirklin/fork_awesome-tailwindcss"
+      },
+      {
+        "name": "fork_heti",
+        "language": null,
+        "description": "赫蹏（hètí）是专为中文内容展示设计的排版样式增强。它基于通行的中文排版规范而来，可以为网站的读者带来更好的文章阅读体验。",
+        "link": "https://github.com/kirklin/fork_heti"
+      },
+      {
+        "name": "fork_lynx",
+        "language": null,
+        "description": "Empower the Web community and invite more to build across platforms.",
+        "link": "https://github.com/kirklin/fork_lynx"
+      },
+      {
+        "name": "gh-repo-export",
+        "language": null,
+        "description": null,
+        "link": "https://github.com/kirklin/gh-repo-export"
+      },
+      {
+        "name": "kirklin",
+        "language": null,
+        "description": "Kirk Lin 's public profile.",
+        "link": "https://github.com/kirklin/kirklin"
+      },
+      {
+        "name": "mitt",
+        "language": null,
+        "description": "🥊 Tiny 200 byte functional event emitter / pubsub.",
+        "link": "https://github.com/kirklin/mitt"
+      },
+      {
+        "name": "Omi",
+        "language": null,
+        "description": "AI wearables",
+        "link": "https://github.com/kirklin/Omi"
+      },
+      {
+        "name": "pinia",
+        "language": null,
+        "description": "🍍 Intuitive, type safe, light and flexible Store for Vue using the composition api with DevTools support",
+        "link": "https://github.com/kirklin/pinia"
+      },
+      {
+        "name": "prompt-prospective-business-owner",
+        "language": null,
+        "description": null,
+        "link": "https://github.com/kirklin/prompt-prospective-business-owner"
+      },
+      {
+        "name": "typescript-go",
+        "language": null,
+        "description": "Staging repo for development of native port of TypeScript",
+        "link": "https://github.com/kirklin/typescript-go"
+      },
+      {
+        "name": "unocss-preset-shadcn",
+        "language": null,
+        "description": "Use shadcn ui with UnoCSS",
+        "link": "https://github.com/kirklin/unocss-preset-shadcn"
+      },
+      {
+        "name": "vitepress-ancient",
+        "language": null,
+        "description": "一个专为古诗词文档优化的基于vitepress的工具。",
+        "link": "https://github.com/kirklin/vitepress-ancient"
+      },
+      {
+        "name": "vscode-settings",
+        "language": null,
+        "description": "Kirk Lin's VS Code settings and extensions",
+        "link": "https://github.com/kirklin/vscode-settings"
+      }
+    ],
+    "TypeScript": [
+      {
+        "name": "agi-moment",
+        "language": "TypeScript",
+        "description": "Imagine the Infinite Possibilities of AGI",
+        "link": "https://github.com/kirklin/agi-moment"
+      },
+      {
+        "name": "algorithm-snowflake",
+        "language": "TypeScript",
+        "description": "A TypeScript implementation of the Snowflake algorithm for generating unique distributed IDs.",
+        "link": "https://github.com/kirklin/algorithm-snowflake"
+      },
+      {
+        "name": "antdv-pro",
+        "language": "TypeScript",
+        "description": "An antdv-based middle and background management system",
+        "link": "https://github.com/kirklin/antdv-pro"
+      },
+      {
+        "name": "bili-fav-collector",
+        "language": "TypeScript",
+        "description": "b站 UP主收藏夹工具",
+        "link": "https://github.com/kirklin/bili-fav-collector"
+      },
+      {
+        "name": "BlockCV",
+        "language": "TypeScript",
+        "description": "an online resume editor that allows users to easily create and customize professional resumes. ",
+        "link": "https://github.com/kirklin/BlockCV"
+      },
+      {
+        "name": "boot-lynx",
+        "language": "TypeScript",
+        "description": null,
+        "link": "https://github.com/kirklin/boot-lynx"
+      },
+      {
+        "name": "boot-mcp",
+        "language": "TypeScript",
+        "description": "A starter template for building Model Context Protocol (MCP) applications with TypeScript",
+        "link": "https://github.com/kirklin/boot-mcp"
+      },
+      {
+        "name": "boot-nextjs",
+        "language": "TypeScript",
+        "description": "a Next.js project",
+        "link": "https://github.com/kirklin/boot-nextjs"
+      },
+      {
+        "name": "boot-nuxt3",
+        "language": "TypeScript",
+        "description": null,
+        "link": "https://github.com/kirklin/boot-nuxt3"
+      },
+      {
+        "name": "boot-react-native",
+        "language": "TypeScript",
+        "description": null,
+        "link": "https://github.com/kirklin/boot-react-native"
+      },
+      {
+        "name": "boot-taro-react",
+        "language": "TypeScript",
+        "description": "基于 Taro + React 的开箱即用的小程序模板，采用最新的 Taro 4.0 + React 18 + TypeScript + UnoCSS 。A ready-to-use mini program template based on Taro + React, featuring the latest Taro 4.0, React 18, TypeScript, and UnoCSS.",
+        "link": "https://github.com/kirklin/boot-taro-react"
+      },
+      {
+        "name": "boot-taro-vue",
+        "language": "TypeScript",
+        "description": "使用 Vue3、Taro 、TypeScript 、Tailwind/Windi CSS等技术开发微信小程序",
+        "link": "https://github.com/kirklin/boot-taro-vue"
+      },
+      {
+        "name": "boot-ts",
+        "language": "TypeScript",
+        "description": "a fast development framework based on TypeScript and rich plugins, which can quickly start projects and provide modular development, automated building, testing, and more.",
+        "link": "https://github.com/kirklin/boot-ts"
+      },
+      {
+        "name": "boot-uni",
+        "language": "TypeScript",
+        "description": "Mocking up uni app with Boot-Uni",
+        "link": "https://github.com/kirklin/boot-uni"
+      },
+      {
+        "name": "boot-unplugin",
+        "language": "TypeScript",
+        "description": "Starter template for unplugin.",
+        "link": "https://github.com/kirklin/boot-unplugin"
+      },
+      {
+        "name": "boot-vant",
+        "language": "TypeScript",
+        "description": null,
+        "link": "https://github.com/kirklin/boot-vant"
+      },
+      {
+        "name": "boot-vue-ui-library",
+        "language": "TypeScript",
+        "description": null,
+        "link": "https://github.com/kirklin/boot-vue-ui-library"
+      },
+      {
+        "name": "boot-webext",
+        "language": "TypeScript",
+        "description": "Chrome extension template with Vue 3 + Typescript",
+        "link": "https://github.com/kirklin/boot-webext"
+      },
+      {
+        "name": "celeris",
+        "language": "TypeScript",
+        "description": "Celeris is a full-stack platform for developing and deploying web applications and microservices using Vue and Spring Boot.",
+        "link": "https://github.com/kirklin/celeris"
+      },
+      {
+        "name": "celeris-web",
+        "language": "TypeScript",
+        "description": "Celeris Web is a highly performant and customizable front-end development template built with Vue 3, Vite, and TypeScript. It features the latest syntax, components and APIs auto importing, state management, Chinese font presets, internationalization, and integration with OpenAI's ChatGPT API.",
+        "link": "https://github.com/kirklin/celeris-web"
+      },
+      {
+        "name": "cfuse",
+        "language": "TypeScript",
+        "description": "A utility for constructing className strings conditionally.",
+        "link": "https://github.com/kirklin/cfuse"
+      },
+      {
+        "name": "chatgpt-demo",
+        "language": "TypeScript",
+        "description": null,
+        "link": "https://github.com/kirklin/chatgpt-demo"
+      },
+      {
+        "name": "create-boot",
+        "language": "TypeScript",
+        "description": "Scaffolding Your First Web App Project",
+        "link": "https://github.com/kirklin/create-boot"
+      },
+      {
+        "name": "create-vite-boot",
+        "language": "TypeScript",
+        "description": null,
+        "link": "https://github.com/kirklin/create-vite-boot"
+      },
+      {
+        "name": "design-layouts",
+        "language": "TypeScript",
+        "description": "Design Layouts is a website that showcases various layouts built using the Tailwind CSS framework. It's a collection of handcrafted layouts that you can use in your next project.",
+        "link": "https://github.com/kirklin/design-layouts"
+      },
+      {
+        "name": "detect-mobile",
+        "language": "TypeScript",
+        "description": "📱 A delightful module for detecting mobile devices and touch capabilities in your web environment. Tailor your user experience based on device characteristics with ease!",
+        "link": "https://github.com/kirklin/detect-mobile"
+      },
+      {
+        "name": "di-event",
+        "language": "TypeScript",
+        "description": "Event-Driven Dependency Injection Project Demo",
+        "link": "https://github.com/kirklin/di-event"
+      },
+      {
+        "name": "echarts",
+        "language": "TypeScript",
+        "description": "Apache ECharts is a powerful, interactive charting and data visualization library for browser",
+        "link": "https://github.com/kirklin/echarts"
+      },
+      {
+        "name": "eerie-mancer",
+        "language": "TypeScript",
+        "description": null,
+        "link": "https://github.com/kirklin/eerie-mancer"
+      },
+      {
+        "name": "eslint-config",
+        "language": "TypeScript",
+        "description": "Kirk Lin's ESLint config presets",
+        "link": "https://github.com/kirklin/eslint-config"
+      },
+      {
+        "name": "eslint-config-antfu",
+        "language": "TypeScript",
+        "description": "Anthony's ESLint config presets",
+        "link": "https://github.com/kirklin/eslint-config-antfu"
+      },
+      {
+        "name": "eslint-plugin-kirklin",
+        "language": "TypeScript",
+        "description": "Kirk Lin extended ESLint rules",
+        "link": "https://github.com/kirklin/eslint-plugin-kirklin"
+      },
+      {
+        "name": "eternal-game",
+        "language": "TypeScript",
+        "description": "一个结合大模型技术的智能游戏开发平台",
+        "link": "https://github.com/kirklin/eternal-game"
+      },
+      {
+        "name": "forest3-eth-beijing-2024",
+        "language": "TypeScript",
+        "description": null,
+        "link": "https://github.com/kirklin/forest3-eth-beijing-2024"
+      },
+      {
+        "name": "fork_naive-ui",
+        "language": "TypeScript",
+        "description": "A Vue 3 Component Library. Fairly Complete. Theme Customizable. Uses TypeScript. Fast.",
+        "link": "https://github.com/kirklin/fork_naive-ui"
+      },
+      {
+        "name": "fork_pnpm",
+        "language": "TypeScript",
+        "description": "Fast, disk space efficient package manager",
+        "link": "https://github.com/kirklin/fork_pnpm"
+      },
+      {
+        "name": "fork_shadcn-landing-page",
+        "language": "TypeScript",
+        "description": "Landing page template using Shadcn, React, Typescript and Tailwind",
+        "link": "https://github.com/kirklin/fork_shadcn-landing-page"
+      },
+      {
+        "name": "fork_table",
+        "language": "TypeScript",
+        "description": "🤖 Headless UI for building powerful tables & datagrids for TS/JS -  React-Table, Vue-Table, Solid-Table, Svelte-Table",
+        "link": "https://github.com/kirklin/fork_table"
+      },
+      {
+        "name": "fork_unplugin-imagemin",
+        "language": "TypeScript",
+        "description": "📦📦   unplugin  compression  Image Compression plugin based on squoosh and sharp",
+        "link": "https://github.com/kirklin/fork_unplugin-imagemin"
+      },
+      {
+        "name": "fork_vben3",
+        "language": "TypeScript",
+        "description": null,
+        "link": "https://github.com/kirklin/fork_vben3"
+      },
+      {
+        "name": "headless-highlighter",
+        "language": "TypeScript",
+        "description": "provide powerful text highlighting functionality",
+        "link": "https://github.com/kirklin/headless-highlighter"
+      },
+      {
+        "name": "kelly-criterion",
+        "language": "TypeScript",
+        "description": "A Kelly Criterion calculator written in TypeScript",
+        "link": "https://github.com/kirklin/kelly-criterion"
+      },
+      {
+        "name": "kkplay",
+        "language": "TypeScript",
+        "description": "KKPLAY 是一个 JavaScript 库，帮助你快速且有趣地制作游戏。",
+        "link": "https://github.com/kirklin/kkplay"
+      },
+      {
+        "name": "logger",
+        "language": "TypeScript",
+        "description": "A simple JavaScript logging library that allows you to log messages with levels (Trace, Debug, Info, Warn, and Error)",
+        "link": "https://github.com/kirklin/logger"
+      },
+      {
+        "name": "lynx-examples_fork",
+        "language": "TypeScript",
+        "description": "🚀 Comprehensive Lynx Examples",
+        "link": "https://github.com/kirklin/lynx-examples_fork"
+      },
+      {
+        "name": "micro-vue",
+        "language": "TypeScript",
+        "description": "Your compact Vue 3 companion for simplified learning and development.",
+        "link": "https://github.com/kirklin/micro-vue"
+      },
+      {
+        "name": "mourning-page",
+        "language": "TypeScript",
+        "description": "哀悼日网页变灰",
+        "link": "https://github.com/kirklin/mourning-page"
+      },
+      {
+        "name": "music-skyway",
+        "language": "TypeScript",
+        "description": null,
+        "link": "https://github.com/kirklin/music-skyway"
+      },
+      {
+        "name": "ni",
+        "language": "TypeScript",
+        "description": "💡 Use the right package manager",
+        "link": "https://github.com/kirklin/ni"
+      },
+      {
+        "name": "npm-name-explorer",
+        "language": "TypeScript",
+        "description": "allows you to check whether a package or organization name is available on npm.",
+        "link": "https://github.com/kirklin/npm-name-explorer"
+      },
+      {
+        "name": "oops-plugin-framework_fork",
+        "language": "TypeScript",
+        "description": "oops-framework-plugin 是基于 Cocos Creator 3.x 以插件形式使用的游戏框架，此版本框架代码与游戏具体业务逻辑代码分离，方便在项目开发过程随时更新框架最新版本代码。",
+        "link": "https://github.com/kirklin/oops-plugin-framework_fork"
+      },
+      {
+        "name": "palette",
+        "language": "TypeScript",
+        "description": "color palettes",
+        "link": "https://github.com/kirklin/palette"
+      },
+      {
+        "name": "portfolio",
+        "language": "TypeScript",
+        "description": "Kirk Lin's Portfolio",
+        "link": "https://github.com/kirklin/portfolio"
+      },
+      {
+        "name": "postcss-px-conversion",
+        "language": "TypeScript",
+        "description": "A plugin for PostCSS that generates viewport units (vw, vh, vmin, vmax) from pixel units. The best choice to create a scalable interface on different displays by one design size.",
+        "link": "https://github.com/kirklin/postcss-px-conversion"
+      },
+      {
+        "name": "promptitude",
+        "language": "TypeScript",
+        "description": "Promptitude is a formatted JSON prompt library containing various themes and scenarios. It helps you train ChatGPT more efficiently and effectively to improve the performance of ChatGPT.",
+        "link": "https://github.com/kirklin/promptitude"
+      },
+      {
+        "name": "roadmap-render",
+        "language": "TypeScript",
+        "description": "Convert wireframe controls into SVG elements with versatile rendering capabilities for various control types, enabling easy visualization and customization.",
+        "link": "https://github.com/kirklin/roadmap-render"
+      },
+      {
+        "name": "router",
+        "language": "TypeScript",
+        "description": "🚦 The official router for Vue.js",
+        "link": "https://github.com/kirklin/router"
+      },
+      {
+        "name": "shadcn-landing-page-template",
+        "language": "TypeScript",
+        "description": "Create stunning React landing pages effortlessly with ShadcnUI template",
+        "link": "https://github.com/kirklin/shadcn-landing-page-template"
+      },
+      {
+        "name": "sliding-captcha",
+        "language": "TypeScript",
+        "description": "sliding-captcha",
+        "link": "https://github.com/kirklin/sliding-captcha"
+      },
+      {
+        "name": "SuperMemo2",
+        "language": "TypeScript",
+        "description": "A TypeScript implementation of the SuperMemo 2 (SM2) algorithm for spaced based repetition algorithm.",
+        "link": "https://github.com/kirklin/SuperMemo2"
+      },
+      {
+        "name": "third-gpt",
+        "language": "TypeScript",
+        "description": null,
+        "link": "https://github.com/kirklin/third-gpt"
+      },
+      {
+        "name": "TypeChat",
+        "language": "TypeScript",
+        "description": "TypeChat is a library that makes it easy to build natural language interfaces using types.",
+        "link": "https://github.com/kirklin/TypeChat"
+      },
+      {
+        "name": "unocss",
+        "language": "TypeScript",
+        "description": "The instant on-demand atomic CSS engine.",
+        "link": "https://github.com/kirklin/unocss"
+      },
+      {
+        "name": "unocss-preset-chinese",
+        "language": "TypeScript",
+        "description": "汉字排版解决方案",
+        "link": "https://github.com/kirklin/unocss-preset-chinese"
+      },
+      {
+        "name": "unplugin",
+        "language": "TypeScript",
+        "description": "Unified plugin system for Vite, Rollup, Webpack, and more",
+        "link": "https://github.com/kirklin/unplugin"
+      },
+      {
+        "name": "unplugin-config",
+        "language": "TypeScript",
+        "description": "🔧 Configuration file generator for web apps, allowing external customization of global variables without repackaging.",
+        "link": "https://github.com/kirklin/unplugin-config"
+      },
+      {
+        "name": "unplugin-mocker",
+        "language": "TypeScript",
+        "description": null,
+        "link": "https://github.com/kirklin/unplugin-mocker"
+      },
+      {
+        "name": "unplugin-theme",
+        "language": "TypeScript",
+        "description": "Dynamically changing the theme color,",
+        "link": "https://github.com/kirklin/unplugin-theme"
+      },
+      {
+        "name": "v-fuse",
+        "language": "TypeScript",
+        "description": null,
+        "link": "https://github.com/kirklin/v-fuse"
+      },
+      {
+        "name": "vite-plugin-vben-theme",
+        "language": "TypeScript",
+        "description": "Vite plugin for dynamically changing the theme color of the interface",
+        "link": "https://github.com/kirklin/vite-plugin-vben-theme"
+      },
+      {
+        "name": "vitesse-webext",
+        "language": "TypeScript",
+        "description": "⚡️ WebExtension Vite Starter Template",
+        "link": "https://github.com/kirklin/vitesse-webext"
+      },
+      {
+        "name": "vue",
+        "language": "TypeScript",
+        "description": "🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+        "link": "https://github.com/kirklin/vue"
+      },
+      {
+        "name": "vue-core",
+        "language": "TypeScript",
+        "description": "🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+        "link": "https://github.com/kirklin/vue-core"
+      },
+      {
+        "name": "xlayout",
+        "language": "TypeScript",
+        "description": "🤖 Powerful and type-safe form state management for the web. TS/JS, React Layout, Solid Layout, Svelte Layout and Vue Layout.",
+        "link": "https://github.com/kirklin/xlayout"
+      }
+    ],
+    "Python": [
+      {
+        "name": "ai_writer_langgraph",
+        "language": "Python",
+        "description": "一个基于 LangChain、 LangGraph 和 OpenAI 的项目，展示了如何使用语言模型和工具来生成大纲并根据大纲撰写文章。",
+        "link": "https://github.com/kirklin/ai_writer_langgraph"
+      },
+      {
+        "name": "boot-flask",
+        "language": "Python",
+        "description": null,
+        "link": "https://github.com/kirklin/boot-flask"
+      },
+      {
+        "name": "caption2md",
+        "language": "Python",
+        "description": "B站弹幕转markdown",
+        "link": "https://github.com/kirklin/caption2md"
+      },
+      {
+        "name": "cursor_machine_id_fork",
+        "language": "Python",
+        "description": null,
+        "link": "https://github.com/kirklin/cursor_machine_id_fork"
+      },
+      {
+        "name": "dailycheckin",
+        "language": "Python",
+        "description": "可基于【腾讯云函数】/【GitHub Actions】/【Docker】的每日签到脚本（支持多账号使用）签到列表: ｜爱奇艺｜全民K歌｜腾讯视频｜有道云笔记｜网易云音乐｜一加手机社区官方论坛｜百度贴吧｜Bilibili｜V2EX｜咔叽网单｜什么值得买｜AcFun｜天翼云盘｜WPS｜吾爱破解｜芒果TV｜联通营业厅｜Fa米家｜喜马拉雅极速版｜小米运动｜百度搜索资源平台｜每日天气预报｜每日一句｜哔咔漫画｜和彩云｜智友邦｜微博｜",
+        "link": "https://github.com/kirklin/dailycheckin"
+      },
+      {
+        "name": "exam-scorer",
+        "language": "Python",
+        "description": "基于智谱AI GLM-4V-Plus多模态大模型的智能判题工具",
+        "link": "https://github.com/kirklin/exam-scorer"
+      },
+      {
+        "name": "fork_mem0",
+        "language": "Python",
+        "description": "The memory layer for Personalized AI",
+        "link": "https://github.com/kirklin/fork_mem0"
+      },
+      {
+        "name": "gradio-theme-kirklin",
+        "language": "Python",
+        "description": null,
+        "link": "https://github.com/kirklin/gradio-theme-kirklin"
+      },
+      {
+        "name": "hyper-unlock",
+        "language": "Python",
+        "description": "bootloader unlock tool for Xiaomi HyperOS ",
+        "link": "https://github.com/kirklin/hyper-unlock"
+      },
+      {
+        "name": "RO-SCIRAW",
+        "language": "Python",
+        "description": "RO-SCIRAW框架是由Kirk Lin开创的提示词方法论，为构建高度精确和高效的提示词提供了一个全新的范式。",
+        "link": "https://github.com/kirklin/RO-SCIRAW"
+      },
+      {
+        "name": "WeChatRead-AIOutline-Crawler",
+        "language": "Python",
+        "description": null,
+        "link": "https://github.com/kirklin/WeChatRead-AIOutline-Crawler"
+      }
+    ],
+    "Vue": [
+      {
+        "name": "arco-design-pro-vue",
+        "language": "Vue",
+        "description": "An out-of-the-box solution to quickly build enterprise-level applications based on Arco Design.",
+        "link": "https://github.com/kirklin/arco-design-pro-vue"
+      },
+      {
+        "name": "beijing-hangzhou-canal-history-modernity",
+        "language": "Vue",
+        "description": "京杭大运河",
+        "link": "https://github.com/kirklin/beijing-hangzhou-canal-history-modernity"
+      },
+      {
+        "name": "boot-slidev",
+        "language": "Vue",
+        "description": "Fast boot slides",
+        "link": "https://github.com/kirklin/boot-slidev"
+      },
+      {
+        "name": "boot-vue",
+        "language": "Vue",
+        "description": "Boot Vue is a lightning fast Vue 3 template with strongly typed TypeScript, UnoCSS, DaisyUI, Vue Router, Pinia, and Netlify support.",
+        "link": "https://github.com/kirklin/boot-vue"
+      },
+      {
+        "name": "brics-skills-iot-screen",
+        "language": "Vue",
+        "description": "2022金砖国家技能发展与技术创新大赛厦门国际赛 物联网及其在智慧城市中的应用",
+        "link": "https://github.com/kirklin/brics-skills-iot-screen"
+      },
+      {
+        "name": "calendar",
+        "language": "Vue",
+        "description": "🍞📅 A Vue calendar Component",
+        "link": "https://github.com/kirklin/calendar"
+      },
+      {
+        "name": "NeoMemory",
+        "language": "Vue",
+        "description": "flashcards app on Vue. ",
+        "link": "https://github.com/kirklin/NeoMemory"
+      },
+      {
+        "name": "TanStack-table-demo",
+        "language": "Vue",
+        "description": null,
+        "link": "https://github.com/kirklin/TanStack-table-demo"
+      },
+      {
+        "name": "vue-vben-admin",
+        "language": "Vue",
+        "description": "A modern vue admin. It is based on Vue3, vite and TypeScript. It's fast！",
+        "link": "https://github.com/kirklin/vue-vben-admin"
+      }
+    ],
+    "Java": [
+      {
+        "name": "ATM-simulation",
+        "language": "Java",
+        "description": "利用JAVA模拟ATM机存取款管理系统设计",
+        "link": "https://github.com/kirklin/ATM-simulation"
+      },
+      {
+        "name": "cpdaily",
+        "language": "Java",
+        "description": "今日校园请假UI模仿",
+        "link": "https://github.com/kirklin/cpdaily"
+      },
+      {
+        "name": "JavaDesignPattern",
+        "language": "Java",
+        "description": "设计模式（Java）",
+        "link": "https://github.com/kirklin/JavaDesignPattern"
+      },
+      {
+        "name": "jhipster-lite",
+        "language": "Java",
+        "description": "JHipster Lite ⚡ is a development platform to generate, develop & deploy modern web applications & microservices architecture, step by step.",
+        "link": "https://github.com/kirklin/jhipster-lite"
+      },
+      {
+        "name": "nacos",
+        "language": "Java",
+        "description": "an easy-to-use dynamic service discovery, configuration and service management platform for building cloud native applications.",
+        "link": "https://github.com/kirklin/nacos"
+      },
+      {
+        "name": "OneDay",
+        "language": "Java",
+        "description": "Open source diary application for Android.",
+        "link": "https://github.com/kirklin/OneDay"
+      },
+      {
+        "name": "Sentinel",
+        "language": "Java",
+        "description": "A powerful flow control component enabling reliability, resilience and monitoring for microservices. (面向云原生微服务的高可用流控防护组件)",
+        "link": "https://github.com/kirklin/Sentinel"
+      },
+      {
+        "name": "spring-security",
+        "language": "Java",
+        "description": "Spring Security",
+        "link": "https://github.com/kirklin/spring-security"
+      },
+      {
+        "name": "spring-session",
+        "language": "Java",
+        "description": "Spring Session",
+        "link": "https://github.com/kirklin/spring-session"
+      }
+    ],
+    "JavaScript": [
+      {
+        "name": "awesome-vite",
+        "language": "JavaScript",
+        "description": "⚡️ A curated list of awesome things related to Vite.js",
+        "link": "https://github.com/kirklin/awesome-vite"
+      },
+      {
+        "name": "fork_WTF-JavaScript",
+        "language": "JavaScript",
+        "description": null,
+        "link": "https://github.com/kirklin/fork_WTF-JavaScript"
+      },
+      {
+        "name": "jd_sign_bot",
+        "language": "JavaScript",
+        "description": "京东签到机器人",
+        "link": "https://github.com/kirklin/jd_sign_bot"
+      },
+      {
+        "name": "kkmall",
+        "language": "JavaScript",
+        "description": "kkmall（KK商城） 项目是一套电商项目，包括前台商城系统以及后台管理系统，基于 SpringCloud + SpringCloudAlibaba + MyBatis-Plus实现，采用 Docker 容器化部署。前台商城系统包括：用户登录、注册、商品搜索、商品详情、购物车、下订单流程、秒杀活动等模块。后台管理系统包括：系统管理、商品系统、优惠营销、库存系统、订单系统、用户系统、内容管理等七大模块。",
+        "link": "https://github.com/kirklin/kkmall"
+      },
+      {
+        "name": "prettier-config",
+        "language": "JavaScript",
+        "description": "Prettier Config ( 格式化配置 )",
+        "link": "https://github.com/kirklin/prettier-config"
+      }
+    ],
+    "HTML": [
+      {
+        "name": "blog",
+        "language": "HTML",
+        "description": "Kirk Lin 的个人博客",
+        "link": "https://github.com/kirklin/blog"
+      },
+      {
+        "name": "boot-react",
+        "language": "HTML",
+        "description": "boot-react is a lightning fast React boilerplate with strongly typed TypeScript, UnoCSS, and Netlify support.",
+        "link": "https://github.com/kirklin/boot-react"
+      },
+      {
+        "name": "fork_clreq",
+        "language": "HTML",
+        "description": "Requirements for Chinese Text Layout",
+        "link": "https://github.com/kirklin/fork_clreq"
+      },
+      {
+        "name": "PrivateNotes",
+        "language": "HTML",
+        "description": "个人学习笔记，包含了计算机科学笔记，前端笔记，后端笔记",
+        "link": "https://github.com/kirklin/PrivateNotes"
+      },
+      {
+        "name": "unocss-preset-ease",
+        "language": "HTML",
+        "description": "UnoCSS preset: easing functions to transitions for effortless animation timing in styles.",
+        "link": "https://github.com/kirklin/unocss-preset-ease"
+      }
+    ],
+    "Go": [
+      {
+        "name": "boot-backend-go-clean",
+        "language": "Go",
+        "description": "Golang Clean Architecture REST API",
+        "link": "https://github.com/kirklin/boot-backend-go-clean"
+      },
+      {
+        "name": "docker-registry-proxy",
+        "language": "Go",
+        "description": "一个高性能的Docker代理服务器",
+        "link": "https://github.com/kirklin/docker-registry-proxy"
+      },
+      {
+        "name": "go-swd",
+        "language": "Go",
+        "description": "Sensitive Words Detection 一个高性能的敏感词检测和过滤库，基于 Go 语言开发，采用整洁架构设计。专注于中文文本的敏感词检测，支持多种检测策略和灵活的扩展机制。",
+        "link": "https://github.com/kirklin/go-swd"
+      },
+      {
+        "name": "qzone-history",
+        "language": "Go",
+        "description": "QZone History 是一个旨在还原和重建 QQ 空间历史的项目。通过收集和分析用户的活动记录，即使某些说说、留言板消息等内容已被删除，本项目也能够进行推理并进行数据重建，帮助用户找回珍贵的历史回忆。",
+        "link": "https://github.com/kirklin/qzone-history"
+      }
+    ],
+    "Batchfile": [
+      {
+        "name": "create_folders",
+        "language": "Batchfile",
+        "description": null,
+        "link": "https://github.com/kirklin/create_folders"
+      },
+      {
+        "name": "mi-press-any-key-to-shutdown",
+        "language": "Batchfile",
+        "description": "修复小米手机连接电脑时 \"press any key to shutdown\" 错误的解决方案",
+        "link": "https://github.com/kirklin/mi-press-any-key-to-shutdown"
+      }
+    ],
+    "Shell": [
+      {
+        "name": "dotfiles",
+        "language": "Shell",
+        "description": "Kirk Lin's Dotfiles",
+        "link": "https://github.com/kirklin/dotfiles"
+      },
+      {
+        "name": "magisk-brick-guardian",
+        "language": "Shell",
+        "description": "一个Magisk 模块，用于防止您的设备因 Magisk 模块导致的启动问题而变砖。",
+        "link": "https://github.com/kirklin/magisk-brick-guardian"
+      },
+      {
+        "name": "palworld-server-deploy-script",
+        "language": "Shell",
+        "description": "a convenient one-click deployment script designed to facilitate the setup of a Palworld server",
+        "link": "https://github.com/kirklin/palworld-server-deploy-script"
+      },
+      {
+        "name": "spring-gradle-build-action",
+        "language": "Shell",
+        "description": "Reusable GitHub Action for performing a gradle build or running a gradle task.",
+        "link": "https://github.com/kirklin/spring-gradle-build-action"
+      }
+    ],
+    "C": [
+      {
+        "name": "fork_HelloWord-Keyboard",
+        "language": "C",
+        "description": "瀚文是一把 多功能、模块化 的 机械键盘。",
+        "link": "https://github.com/kirklin/fork_HelloWord-Keyboard"
+      }
+    ],
+    "Rust": [
+      {
+        "name": "fork_kornia-rs",
+        "language": "Rust",
+        "description": "Low-level Computer Vision library in Rust",
+        "link": "https://github.com/kirklin/fork_kornia-rs"
+      },
+      {
+        "name": "fork_rolldown",
+        "language": "Rust",
+        "description": "Fast Rust bundler for JavaScript with Rollup-compatible API.",
+        "link": "https://github.com/kirklin/fork_rolldown"
+      },
+      {
+        "name": "rust-course",
+        "language": "Rust",
+        "description": "“连续六年成为全世界最受喜爱的语言，无 GC 也无需手动内存管理、极高的性能和安全性、过程/OO/函数式编程、优秀的包管理、JS 未来基石\" — 工作之余的第二语言来试试 Rust 吧。<<Rust语言圣经>>拥有全面且深入的讲解、生动贴切的示例、德芙般丝滑的内容，甚至还有JS程序员关注的 WASM 和 Deno 等专题。这可能是目前最用心的 Rust 中文学习教程 / Book ",
+        "link": "https://github.com/kirklin/rust-course"
+      }
+    ],
+    "Jupyter Notebook": [
+      {
+        "name": "mojo",
+        "language": "Jupyter Notebook",
+        "description": "The Mojo Programming Language",
+        "link": "https://github.com/kirklin/mojo"
+      }
+    ],
+    "MDX": [
+      {
+        "name": "Prompt-Engineering-Guide",
+        "language": "MDX",
+        "description": "🐙 Guides, papers, lecture, notebooks and resources for prompt engineering",
+        "link": "https://github.com/kirklin/Prompt-Engineering-Guide"
+      }
+    ],
+    "CSS": [
+      {
+        "name": "reset-css",
+        "language": "CSS",
+        "description": "Collection of standard reset CSS stylesheets.",
+        "link": "https://github.com/kirklin/reset-css"
+      },
+      {
+        "name": "TanStack-table-doc-cn",
+        "language": "CSS",
+        "description": "TanStack-table-doc-cn is a community-driven effort to provide Chinese language (中文) support for the documentation of the TanStack/table library. ",
+        "link": "https://github.com/kirklin/TanStack-table-doc-cn"
+      },
+      {
+        "name": "vue3-hoc-demo",
+        "language": "CSS",
+        "description": null,
+        "link": "https://github.com/kirklin/vue3-hoc-demo"
+      }
+    ],
+    "PowerShell": [
+      {
+        "name": "scoop-automated-installer",
+        "language": "PowerShell",
+        "description": "Automate the installation and setup of Scoop and common software with this PowerShell script.",
+        "link": "https://github.com/kirklin/scoop-automated-installer"
+      }
+    ]
+  }
+}
