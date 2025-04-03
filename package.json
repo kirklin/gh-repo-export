@@ -1,0 +1,64 @@
+{
+  "name": "gh-repo-export",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.2.1",
+  "description": "_description_",
+  "author": "Kirk Lin <https://github.com/kirklin>",
+  "license": "MIT",
+  "funding": "https://www.buymeacoffee.com/linkirk",
+  "homepage": "https://github.com/kirklin/gh-repo-export#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirklin/gh-repo-export.git"
+  },
+  "bugs": "https://github.com/kirklin/gh-repo-export/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.mjs"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepublishOnly": "npm run build",
+    "postinstall": "npm run build",
+    "release": "bumpp",
+    "start": "esno src/index.ts",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepare": "simple-git-hooks",
+    "up": "taze major -r -w -I"
+  },
+  "devDependencies": {
+    "@antfu/ni": "^23.3.1",
+    "@kirklin/eslint-config": "^3.0.0",
+    "@types/node": "^22.13.1",
+    "bumpp": "^10.0.2",
+    "eslint": "^9.20.0",
+    "esno": "^4.8.0",
+    "lint-staged": "^15.4.3",
+    "pnpm": "^10.2.1",
+    "rimraf": "^6.0.1",
+    "simple-git-hooks": "^2.11.1",
+    "taze": "^18.4.0",
+    "typescript": "^5.7.3",
+    "unbuild": "^3.3.1",
+    "vite": "^6.1.0",
+    "vitest": "^3.0.5"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
