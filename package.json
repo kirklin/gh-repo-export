@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@10.2.1",
-  "description": "_description_",
+  "description": "A tool to export GitHub repositories of a user as HTML",
   "author": "Kirk Lin <https://github.com/kirklin>",
   "license": "MIT",
   "funding": "https://www.buymeacoffee.com/linkirk",
@@ -16,11 +16,15 @@
   "keywords": [],
   "sideEffects": false,
   "exports": {
-    ".": "./dist/index.mjs"
+    ".": "./dist/index.mjs",
+    "./cli": "./dist/cli.mjs"
   },
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.mts",
+  "bin": {
+    "gh-repo-export": "./dist/cli.mjs"
+  },
   "files": [
     "dist"
   ],
@@ -37,6 +41,9 @@
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks",
     "up": "taze major -r -w -I"
+  },
+  "dependencies": {
+    "axios": "^1.8.4"
   },
   "devDependencies": {
     "@antfu/ni": "^23.3.1",

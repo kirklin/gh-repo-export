@@ -7,10 +7,72 @@
 [![License][license-src]][license-href]
 [![javascript_code style][code-style-image]][code-style-url]
 
-_description_
+一个将GitHub用户的仓库信息导出为HTML文件的工具，按编程语言分类展示。
 
-> **Note**:
-> Replace `gh-repo-export`, `_description_` and `kirklin` globally to use this template.
+## 功能特点
+
+- 获取GitHub用户的所有公共仓库
+- 按编程语言分类
+- 生成美观的HTML页面展示仓库信息
+- 支持命令行使用
+- 可作为库导入到其他项目
+
+## 安装
+
+```bash
+# 全局安装（推荐用于命令行使用）
+npm install -g gh-repo-export
+
+# 或者作为项目依赖安装
+npm install gh-repo-export
+```
+
+## 命令行使用
+
+```bash
+# 导出指定用户的仓库信息（默认输出到 username-repos.html）
+gh-repo-export username
+
+# 指定输出文件路径
+gh-repo-export username output.html
+```
+
+## 编程使用
+
+```typescript
+import { exportGithubRepos } from "gh-repo-export";
+
+// 导出用户的仓库信息
+await exportGithubRepos("username", "output.html");
+```
+
+或者使用更底层的API：
+
+```typescript
+import {
+  checkUser,
+  generateHtml,
+  getAllRepos,
+  groupByLanguages
+} from "gh-repo-export";
+
+async function exportUser(username) {
+  // 获取用户信息
+  const profile = await checkUser(username);
+
+  // 获取所有仓库
+  const repos = await getAllRepos(username, profile.public_repos);
+
+  // 按语言分组
+  const groups = groupByLanguages(repos);
+
+  // 生成HTML
+  const html = generateHtml(profile, groups);
+
+  // 现在可以使用生成的HTML
+  console.log(html);
+}
+```
 
 ## License
 
