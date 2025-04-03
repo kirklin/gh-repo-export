@@ -6,6 +6,7 @@ interface Repository {
   language: string | null;
   description: string | null;
   link: string;
+  isFork: boolean;
 }
 
 interface Profile {
@@ -65,6 +66,7 @@ export async function getRepos(username: string, page: number): Promise<Reposito
       language: item.language,
       description: item.description,
       link: `https://github.com/${item.full_name}`,
+      isFork: item.fork,
     }));
     return repos;
   } catch (error) {
@@ -102,7 +104,17 @@ export async function getAllRepos(username: string, publicRepos: number): Promis
 export function groupByLanguages(repos: Repository[]): LanguageGroups {
   const languages: LanguageGroups = {};
 
+  // 创建一个专门的Forks分类
+  languages.Forks = [];
+
   for (const repo of repos) {
+    // 如果是fork的仓库，添加到Forks分类
+    if (repo.isFork) {
+      languages.Forks.push(repo);
+      continue; // 跳过后续处理
+    }
+
+    // 非fork仓库按语言分类
     const lang = repo.language ? repo.language : "Other";
 
     if (!languages[lang]) {
@@ -110,6 +122,11 @@ export function groupByLanguages(repos: Repository[]): LanguageGroups {
     }
 
     languages[lang].push(repo);
+  }
+
+  // 如果没有fork的仓库，删除空的Forks分类
+  if (languages.Forks.length === 0) {
+    delete languages.Forks;
   }
 
   return languages;
@@ -196,29 +213,35 @@ export function generateHtml(data: GithubRepoData): string {
   <h1>${displayName} GitHub Repositories</h1>
 `;
 
-  // 获取语言列表并排序，确保"Other"始终在最后
+  // 获取语言列表并排序，确保"Other"和"Forks"始终在最后
   const languages = Object.keys(languageGroups);
   const hasOther = languages.includes("Other");
+  const hasForks = languages.includes("Forks");
 
-  // 如果存在"Other"类别，从列表中移除
-  const filteredLanguages = hasOther
-    ? languages.filter(lang => lang !== "Other")
-    : languages;
+  // 从列表中移除特殊类别
+  const filteredLanguages = languages.filter(lang => lang !== "Other" && lang !== "Forks");
 
   // 按字母顺序对其他语言排序
   const sortedLanguages = filteredLanguages.sort();
 
-  // 如果存在"Other"类别，添加到末尾
+  // 将特殊类别添加到末尾
   if (hasOther) {
     sortedLanguages.push("Other");
   }
 
+  // 将Forks类别放在最后
+  if (hasForks) {
+    sortedLanguages.push("Forks");
+  }
+
   for (const language of sortedLanguages) {
     const repos = languageGroups[language];
-    // 特殊处理"Other"类别的标题
+    // 特殊处理类别的标题
     const capitalizedLang = language === "Other"
       ? "# Other"
-      : language.charAt(0).toUpperCase() + language.slice(1);
+      : language === "Forks"
+        ? "# Forks"
+        : language.charAt(0).toUpperCase() + language.slice(1);
 
     html += `  <div class="language-group">
     <div class="language-title">${capitalizedLang}</div>
